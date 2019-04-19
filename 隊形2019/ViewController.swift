@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //画面を開いた時に最初に出るやつ
+        
+        
     }
+    
+    
     
     @IBAction func start() {
     }

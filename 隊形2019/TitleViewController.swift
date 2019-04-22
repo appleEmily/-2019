@@ -31,9 +31,7 @@ class TitleViewController: UIViewController {
     @IBAction func backToTop() {
         self.dismiss(animated: true, completion: nil)
         
-        
     }
-    
 
     
     
@@ -41,18 +39,13 @@ class TitleViewController: UIViewController {
         performSegue(withIdentifier: "goStage", sender: nil)
         
     }
-    @IBAction func taikeiTitle() {
-        
-        //StageViewController.text1 = taikeiTitle.text
-        
-    }
     
-    override func next(for segue: UIStoryboardSegue, sender: Any?) {
+    func next(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goStage" {
             let next = segue.destination as! StageViewController
-            next.navigationItem.title = titleName().text
             
-            //navigationBar に名前を出せない
+            next.taikeiName.text = titleName.text
+  
         }
     }
         

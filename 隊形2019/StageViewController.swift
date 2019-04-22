@@ -10,12 +10,19 @@ import UIKit
 
 class StageViewController: UIViewController {
     
+    //受け取った名前
+    var titleName: String!
     
-    @IBOutlet weak var navigationBar: UINavigationBar!
     
-
+    
+    @IBOutlet weak var taikeiName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        taikeiName.text = titleName
+        
+        print(titleName)
 
         // Do any additional setup after loading the view.
     }

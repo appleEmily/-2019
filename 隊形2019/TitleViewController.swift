@@ -12,6 +12,9 @@ class TitleViewController: UIViewController {
 
     @IBOutlet weak var titleName: UITextField!
     
+    var text = String()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,11 +43,16 @@ class TitleViewController: UIViewController {
         
     }
     
-    func next(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goStage" {
-            let next = segue.destination as! StageViewController
+            let prepare = segue.destination as! StageViewController
             
-            next.taikeiName.text = titleName.text
+            
+            let text:String = self.titleName.text!
+            
+            //titleName.text = text
+            
+            //next.taikeiName.text = titleName.text
   
         }
     }

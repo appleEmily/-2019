@@ -11,8 +11,7 @@ import UIKit
 class StageViewController: UIViewController {
     
     //受け取った名前
-    var titleName: String!
-    
+    var text = String()
     
     
     @IBOutlet weak var taikeiName: UILabel!
@@ -20,17 +19,30 @@ class StageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        taikeiName.text = titleName
+        //taikeiName.text = text
         
-        print(titleName)
-
+//        taikeiName.text = titleName
         // Do any additional setup after loading the view.
+        
+        //値を正しく受け取れていないのか。
+        //受け取ってデータが””になってる
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //受け取った値を代入
+        
+        //taikeiName.text = text
+        
+    }
+    
+    @IBAction func tryButton() {
+            taikeiName.text = text
+            }
     
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-    
 
 }

@@ -15,22 +15,26 @@ class TitleViewController: UIViewController {
     var text = String()
     
     
+    //titleはまだ出せません。。。DAY5でやる
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goStage" {
+            let next = segue.destination as? StageViewController
+            
+            
+            //let text:String = self.titleName.text!
+            
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     @IBAction func backToTop() {
         self.dismiss(animated: true, completion: nil)
         
@@ -42,20 +46,4 @@ class TitleViewController: UIViewController {
         performSegue(withIdentifier: "goStage", sender: nil)
         
     }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goStage" {
-            let prepare = segue.destination as! StageViewController
-            
-            
-            let text:String = self.titleName.text!
-            
-            //titleName.text = text
-            
-            //next.taikeiName.text = titleName.text
-  
-        }
-    }
-        
-    
 }

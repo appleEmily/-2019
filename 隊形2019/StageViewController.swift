@@ -11,8 +11,9 @@ import UIKit
 class StageViewController: UIViewController {
     
     //受け取った名前
-    var text = String()
+    var text: String!
     
+    var count: Int = 0
     var currentHuman: UIImageView!
     var humans = [UIImageView]()
     var befores = [CGPoint]()
@@ -32,7 +33,7 @@ class StageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //taikeiName.text = text
+        taikeiName.text = text
         
 //        taikeiName.text = titleName
         // Do any additional setup after loading the view.
@@ -46,19 +47,8 @@ class StageViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //受け取った値を代入
-        
-        //taikeiName.text = text
-        
-    }
     
-    //これを押したらtitle表示の試しボタン
-    @IBAction func tryButton() {
-            taikeiName.text = text
-            }
+    
     
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -82,8 +72,23 @@ class StageViewController: UIViewController {
         afterBtn.setTitleColor(UIColor.black, for: .normal)
     }
     
-    @IBAction func addHuman() {
-        
+    
+    
+    @IBAction func addHuman(){
+        for i in (0 ..< humans.count) {
+            humans[i].center = befores[i]
+            
+            humans[i].setNeedsDisplay()
+        }
+        let newImage = UIImageView(frame: CGRect(x: -80, y: -80, width: 28, height: 28))
+        newImage.tag = count
+        newImage.image = UIImage(named: "humans.png")
+        newImage.center = self.view.center
+        humans.append(newImage)
+        befores.append(self.view.center)
+        afters.append(self.view.center)
+        self.view.addSubview(newImage)
+        count += 1
         
     }
     

@@ -12,18 +12,13 @@ class TitleViewController: UIViewController {
 
     @IBOutlet weak var titleName: UITextField!
     
-    var text = String()
-    
-    
-    //titleはまだ出せません。。。DAY5でやる
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goStage" {
-            let next = segue.destination as? StageViewController
+            let stageViewController = segue.destination as? StageViewController
             
-            
-            //let text:String = self.titleName.text!
-            
-            
+            stageViewController?.text = titleName.text
+
         }
     }
     
@@ -45,5 +40,9 @@ class TitleViewController: UIViewController {
     @IBAction func start() {
         performSegue(withIdentifier: "goStage", sender: nil)
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }

@@ -121,11 +121,6 @@
                                     <action selector="past" destination="EKO-ju-pFp" eventType="touchUpInside" id="u0K-jn-dMU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yE-Qa-qHD">
-                                <rect key="frame" x="608" y="309" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="trash.png"/>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLJ-NE-DIc">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -159,14 +154,26 @@
                                     <action selector="tryButton" destination="EKO-ju-pFp" eventType="touchUpInside" id="Zwc-PX-5Tk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-9r-5JL">
-                                <rect key="frame" x="286" y="311" width="45" height="45"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-n8-Yrr">
+                                <rect key="frame" x="292" y="312" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="human.png"/>
+                                <connections>
+                                    <action selector="normalHuman" destination="EKO-ju-pFp" eventType="touchUpInside" id="nLg-im-Aqw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-Am-Bpq">
+                                <rect key="frame" x="482" y="302" width="50" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="kyoshu.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="YaO-V6-HnD"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vm6-Mn-aGc" appends="YES" id="1bS-A5-7aF"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="afterBtn" destination="EhO-Pv-Avh" id="krJ-2A-mxR"/>
@@ -175,6 +182,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZh-R0-NGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Vm6-Mn-aGc"/>
             </objects>
             <point key="canvasLocation" x="877.51124437781118" y="133.59999999999999"/>
         </scene>
@@ -285,6 +293,5 @@
         <image name="kyoshu.png" width="525" height="800"/>
         <image name="play.png" width="500" height="500"/>
         <image name="runHuman.png" width="40" height="49"/>
-        <image name="trash.png" width="225" height="225"/>
     </resources>
 </document>

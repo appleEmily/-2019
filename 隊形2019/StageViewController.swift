@@ -82,7 +82,7 @@ class StageViewController: UIViewController {
         afterBtn.setTitleColor(UIColor.black, for: .normal)
     }
     
-    @IBAction func normalHuman() {
+    @IBAction func addHuman() {
         
         
     }

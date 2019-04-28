@@ -37,6 +37,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pastTaikei" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEJ-qE-hUA"/>
+                                    <segue destination="fIN-9Z-gGn" kind="presentation" id="g4A-1W-ZXm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvE-ig-aKJ">
@@ -64,7 +65,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.18140929535232" y="133.59999999999999"/>
+            <point key="canvasLocation" x="484" y="-860"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="puc-h4-pGY">
+            <objects>
+                <tableViewController id="fIN-9Z-gGn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3f5-O3-ySf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jVl-9z-tbn">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jVl-9z-tbn" id="jJM-0z-vPQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fIN-9Z-gGn" id="MjU-Sa-XLA"/>
+                            <outlet property="delegate" destination="fIN-9Z-gGn" id="K3s-Gh-3gn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0r-cj-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="28"/>
         </scene>
         <!--Stage View Controller-->
         <scene sceneID="3qk-4Y-p6z">
@@ -130,7 +159,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="隊形名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-tk-liz">
-                                <rect key="frame" x="154" y="0.0" width="356" height="32"/>
+                                <rect key="frame" x="153" y="0.0" width="356" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -176,7 +205,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZh-R0-NGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Vm6-Mn-aGc"/>
             </objects>
-            <point key="canvasLocation" x="877.51124437781118" y="133.59999999999999"/>
+            <point key="canvasLocation" x="179" y="825"/>
         </scene>
         <!--Settei View Controller-->
         <scene sceneID="Hcm-fs-C2h">
@@ -223,7 +252,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JN-vA-fby" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eEb-SB-Yeh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1405.5472263868066" y="884"/>
+            <point key="canvasLocation" x="179" y="1609"/>
         </scene>
         <!--Title View Controller-->
         <scene sceneID="5J2-qR-Suz">
@@ -280,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7s-Sg-bMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="964"/>
+            <point key="canvasLocation" x="179" y="28"/>
         </scene>
     </scenes>
     <resources>

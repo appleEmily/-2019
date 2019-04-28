@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36FA1DF5DC117BB3609A5CCA /* Pods___2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */; };
 		A1023F262273F84F006041A6 /* trash2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1023F252273F84F006041A6 /* trash2.png */; };
 		A1023F282273F88C006041A6 /* humans.png in Resources */ = {isa = PBXBuildFile; fileRef = A1023F272273F88C006041A6 /* humans.png */; };
 		A13825E12269BAB8003ABCC5 /* 4-pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A13825E02269BAB7003ABCC5 /* 4-pink.png */; };
@@ -26,6 +27,8 @@
 		A1AB50BE2269B54900AA3B6A /* humanSPE.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BD2269B54900AA3B6A /* humanSPE.png */; };
 		A1AB50C02269B5B500AA3B6A /* kyoshu.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BF2269B5B500AA3B6A /* kyoshu.png */; };
 		A1AB50C22269B6ED00AA3B6A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50C12269B6ED00AA3B6A /* play.png */; };
+		CF88EF4343DA1CCE5131E60A /* Pods___2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EBB3299AF755C546A535E1 /* Pods___2019.framework */; };
+		F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.debug.xcconfig"; sourceTree = "<group>"; };
+		445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.release.xcconfig"; sourceTree = "<group>"; };
+		656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1023F252273F84F006041A6 /* trash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash2.png; sourceTree = "<group>"; };
 		A1023F272273F88C006041A6 /* humans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humans.png; sourceTree = "<group>"; };
 		A13825E02269BAB7003ABCC5 /* 4-pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-pink.png"; sourceTree = "<group>"; };
@@ -71,6 +79,10 @@
 		A1AB50BD2269B54900AA3B6A /* humanSPE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanSPE.png; sourceTree = "<group>"; };
 		A1AB50BF2269B5B500AA3B6A /* kyoshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyoshu.png; sourceTree = "<group>"; };
 		A1AB50C12269B6ED00AA3B6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.release.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.release.xcconfig"; sourceTree = "<group>"; };
+		F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF88EF4343DA1CCE5131E60A /* Pods___2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36FA1DF5DC117BB3609A5CCA /* Pods___2019Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +106,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280976060D6F8D7DECD012D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */,
+				D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */,
+				76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */,
+				F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */,
+				77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */,
+				445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60E13EB67B58DE3D61DB40D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EBB3299AF755C546A535E1 /* Pods___2019.framework */,
+				FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */,
+				656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1AB507B2268108B00AA3B6A = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +144,8 @@
 				A1AB509B2268108F00AA3B6A /* 隊形2019Tests */,
 				A1AB50A62268108F00AA3B6A /* 隊形2019UITests */,
 				A1AB50852268108C00AA3B6A /* Products */,
+				280976060D6F8D7DECD012D9 /* Pods */,
+				60E13EB67B58DE3D61DB40D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1AB50AC2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019" */;
 			buildPhases = (
+				A65CA768E7DDAC5F67D7DB95 /* [CP] Check Pods Manifest.lock */,
 				A1AB50802268108C00AA3B6A /* Sources */,
 				A1AB50812268108C00AA3B6A /* Frameworks */,
 				A1AB50822268108C00AA3B6A /* Resources */,
@@ -185,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1AB50AF2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019Tests" */;
 			buildPhases = (
+				BBB641342C0F3AFC9B39F9BF /* [CP] Check Pods Manifest.lock */,
 				A1AB50942268108F00AA3B6A /* Sources */,
 				A1AB50952268108F00AA3B6A /* Frameworks */,
 				A1AB50962268108F00AA3B6A /* Resources */,
@@ -203,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1AB50B22268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019UITests" */;
 			buildPhases = (
+				7F5AF95F482E5ED68DEB1369 /* [CP] Check Pods Manifest.lock */,
 				A1AB509F2268108F00AA3B6A /* Sources */,
 				A1AB50A02268108F00AA3B6A /* Frameworks */,
 				A1AB50A12268108F00AA3B6A /* Resources */,
@@ -295,6 +339,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F5AF95F482E5ED68DEB1369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-隊形2019UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A65CA768E7DDAC5F67D7DB95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-隊形2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB641342C0F3AFC9B39F9BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-隊形2019Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1AB50802268108C00AA3B6A /* Sources */ = {
@@ -478,6 +591,7 @@
 		};
 		A1AB50AD2268108F00AA3B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +610,7 @@
 		};
 		A1AB50AE2268108F00AA3B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +629,7 @@
 		};
 		A1AB50B02268108F00AA3B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +650,7 @@
 		};
 		A1AB50B12268108F00AA3B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +671,7 @@
 		};
 		A1AB50B32268108F00AA3B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +691,7 @@
 		};
 		A1AB50B42268108F00AA3B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

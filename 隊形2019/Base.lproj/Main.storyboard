@@ -82,6 +82,13 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jVl-9z-tbn" id="jJM-0z-vPQ">
                                     <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4N-9N-Vgs">
+                                            <rect key="frame" x="28" y="3" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="戻る"/>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -170,11 +177,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="trash2.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-ZM-ApP">
-                                <rect key="frame" x="366" y="311" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" title="Button" image="4-pink.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nK-wy-rUa">
                                 <rect key="frame" x="220" y="310" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -187,6 +189,11 @@
                                 <connections>
                                     <action selector="addHuman" destination="EKO-ju-pFp" eventType="touchUpInside" id="7pt-n5-Tcu"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-ZM-ApP">
+                                <rect key="frame" x="364" y="311" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button" image="pink.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,7 +212,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZh-R0-NGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Vm6-Mn-aGc"/>
             </objects>
-            <point key="canvasLocation" x="179" y="825"/>
+            <point key="canvasLocation" x="178.56071964017991" y="824.79999999999995"/>
         </scene>
         <!--Settei View Controller-->
         <scene sceneID="Hcm-fs-C2h">
@@ -313,10 +320,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4-pink.png" width="52" height="49"/>
         <image name="humans.png" width="52" height="52"/>
         <image name="justPeople.png" width="55" height="55"/>
         <image name="kyoshu.png" width="52" height="79"/>
+        <image name="pink.png" width="52" height="52"/>
         <image name="play.png" width="52" height="52"/>
         <image name="runHuman.png" width="40" height="49"/>
         <image name="trash2.png" width="52" height="52"/>

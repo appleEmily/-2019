@@ -16,6 +16,7 @@
 		A13825E72269CE1D003ABCC5 /* runHuman.png in Resources */ = {isa = PBXBuildFile; fileRef = A13825E62269CE1A003ABCC5 /* runHuman.png */; };
 		A13825ED2269CFD3003ABCC5 /* justPeople.png in Resources */ = {isa = PBXBuildFile; fileRef = A13825EC2269CFD3003ABCC5 /* justPeople.png */; };
 		A18698222274435500A51D74 /* setteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18698212274435500A51D74 /* setteiViewController.swift */; };
+		A186987122769BF700A51D74 /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987022769BF700A51D74 /* pink.png */; };
 		A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50872268108C00AA3B6A /* AppDelegate.swift */; };
 		A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50892268108C00AA3B6A /* ViewController.swift */; };
 		A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AB508B2268108C00AA3B6A /* Main.storyboard */; };
@@ -51,7 +52,7 @@
 /* Begin PBXFileReference section */
 		411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.debug.xcconfig"; sourceTree = "<group>"; };
 		445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.release.xcconfig"; sourceTree = "<group>"; };
-		656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1023F252273F84F006041A6 /* trash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash2.png; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		A13825E62269CE1A003ABCC5 /* runHuman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runHuman.png; sourceTree = "<group>"; };
 		A13825EC2269CFD3003ABCC5 /* justPeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = justPeople.png; sourceTree = "<group>"; };
 		A18698212274435500A51D74 /* setteiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setteiViewController.swift; sourceTree = "<group>"; };
+		A186987022769BF700A51D74 /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink.png; sourceTree = "<group>"; };
 		A1AB50842268108C00AA3B6A /* 隊形2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "隊形2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50872268108C00AA3B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AB50892268108C00AA3B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,10 +81,10 @@
 		A1AB50BD2269B54900AA3B6A /* humanSPE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanSPE.png; sourceTree = "<group>"; };
 		A1AB50BF2269B5B500AA3B6A /* kyoshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyoshu.png; sourceTree = "<group>"; };
 		A1AB50C12269B6ED00AA3B6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.release.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.release.xcconfig"; sourceTree = "<group>"; };
 		F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,6 @@
 				77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */,
 				445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +181,7 @@
 				A13825E62269CE1A003ABCC5 /* runHuman.png */,
 				A13825EC2269CFD3003ABCC5 /* justPeople.png */,
 				A1023F252273F84F006041A6 /* trash2.png */,
+				A186987022769BF700A51D74 /* pink.png */,
 			);
 			path = "隊形2019";
 			sourceTree = "<group>";
@@ -310,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AB50922268108E00AA3B6A /* LaunchScreen.storyboard in Resources */,
+				A186987122769BF700A51D74 /* pink.png in Resources */,
 				A13825E72269CE1D003ABCC5 /* runHuman.png in Resources */,
 				A1AB50C22269B6ED00AA3B6A /* play.png in Resources */,
 				A13825E12269BAB8003ABCC5 /* 4-pink.png in Resources */,
@@ -604,7 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Emily.--2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -623,7 +626,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Emily.--2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

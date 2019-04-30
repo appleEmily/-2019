@@ -35,9 +35,6 @@ class StageViewController: UIViewController {
         
         taikeiName.text = text
         
-//        taikeiName.text = titleName
-        // Do any additional setup after loading the view.
-        
         /*値を正しく受け取れていないのか。
         受け取ってデータが””になってる
         */

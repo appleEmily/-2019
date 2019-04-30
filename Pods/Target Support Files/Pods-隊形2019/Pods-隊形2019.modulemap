@@ -1,0 +1,6 @@
+framework module Pods___2019 {
+  umbrella header "Pods-隊形2019-umbrella.h"
+
+  export *
+  module * { export * }
+}

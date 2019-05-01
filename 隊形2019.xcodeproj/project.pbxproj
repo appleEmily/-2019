@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		36FA1DF5DC117BB3609A5CCA /* Pods___2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */; };
 		A1023F262273F84F006041A6 /* trash2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1023F252273F84F006041A6 /* trash2.png */; };
-		A1023F282273F88C006041A6 /* humans.png in Resources */ = {isa = PBXBuildFile; fileRef = A1023F272273F88C006041A6 /* humans.png */; };
 		A13825E12269BAB8003ABCC5 /* 4-pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A13825E02269BAB7003ABCC5 /* 4-pink.png */; };
 		A13825E32269C5E3003ABCC5 /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13825E22269C5E3003ABCC5 /* StageViewController.swift */; };
 		A13825E52269C643003ABCC5 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13825E42269C643003ABCC5 /* TitleViewController.swift */; };
@@ -29,7 +28,7 @@
 		A1AB50C02269B5B500AA3B6A /* kyoshu.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BF2269B5B500AA3B6A /* kyoshu.png */; };
 		A1AB50C22269B6ED00AA3B6A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50C12269B6ED00AA3B6A /* play.png */; };
 		CF88EF4343DA1CCE5131E60A /* Pods___2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EBB3299AF755C546A535E1 /* Pods___2019.framework */; };
-		F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */; };
+		F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1023F252273F84F006041A6 /* trash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash2.png; sourceTree = "<group>"; };
-		A1023F272273F88C006041A6 /* humans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humans.png; sourceTree = "<group>"; };
 		A13825E02269BAB7003ABCC5 /* 4-pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-pink.png"; sourceTree = "<group>"; };
 		A13825E22269C5E3003ABCC5 /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 		A13825E42269C643003ABCC5 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				A1AB50902268108E00AA3B6A /* LaunchScreen.storyboard */,
 				A1AB50932268108E00AA3B6A /* Info.plist */,
 				A1AB50BD2269B54900AA3B6A /* humanSPE.png */,
-				A1023F272273F88C006041A6 /* humans.png */,
 				A1AB50BF2269B5B500AA3B6A /* kyoshu.png */,
 				A1AB50BB2269721800AA3B6A /* settei.png */,
 				A13825E02269BAB7003ABCC5 /* 4-pink.png */,
@@ -249,8 +246,8 @@
 			buildConfigurationList = A1AB50B22268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019UITests" */;
 			buildPhases = (
 				7F5AF95F482E5ED68DEB1369 /* [CP] Check Pods Manifest.lock */,
-				A1AB509F2268108F00AA3B6A /* Sources */,
 				A1AB50A02268108F00AA3B6A /* Frameworks */,
+				A1AB509F2268108F00AA3B6A /* Sources */,
 				A1AB50A12268108F00AA3B6A /* Resources */,
 			);
 			buildRules = (
@@ -321,7 +318,6 @@
 				A1AB50BE2269B54900AA3B6A /* humanSPE.png in Resources */,
 				A13825ED2269CFD3003ABCC5 /* justPeople.png in Resources */,
 				A1023F262273F84F006041A6 /* trash2.png in Resources */,
-				A1023F282273F88C006041A6 /* humans.png in Resources */,
 				A1AB50BC2269721900AA3B6A /* settei.png in Resources */,
 				A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */,
 			);
@@ -637,6 +633,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -658,6 +655,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,6 +676,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -698,6 +697,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

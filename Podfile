@@ -4,7 +4,7 @@ platform :ios, '9.0'
 target '隊形2019' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'RealmSwift'
+pod 'RealmSwift'
   
 
   # Pods for 隊形2019

@@ -183,9 +183,9 @@
                                 <state key="normal" title="Button" image="play.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-NQ-sQz">
-                                <rect key="frame" x="291" y="311" width="45" height="45"/>
+                                <rect key="frame" x="291" y="309" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" title="B">
+                                <state key="normal" image="people.png">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
@@ -324,6 +324,7 @@
     <resources>
         <image name="justPeople.png" width="55" height="55"/>
         <image name="kyoshu.png" width="52" height="79"/>
+        <image name="people.png" width="52" height="52"/>
         <image name="pink.png" width="52" height="52"/>
         <image name="play.png" width="52" height="52"/>
         <image name="runHuman.png" width="40" height="49"/>

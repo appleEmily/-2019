@@ -16,6 +16,7 @@
 		A13825ED2269CFD3003ABCC5 /* justPeople.png in Resources */ = {isa = PBXBuildFile; fileRef = A13825EC2269CFD3003ABCC5 /* justPeople.png */; };
 		A18698222274435500A51D74 /* setteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18698212274435500A51D74 /* setteiViewController.swift */; };
 		A186987122769BF700A51D74 /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987022769BF700A51D74 /* pink.png */; };
+		A186987F227B31D300A51D74 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987E227B31D300A51D74 /* people.png */; };
 		A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50872268108C00AA3B6A /* AppDelegate.swift */; };
 		A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50892268108C00AA3B6A /* ViewController.swift */; };
 		A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AB508B2268108C00AA3B6A /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		A13825EC2269CFD3003ABCC5 /* justPeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = justPeople.png; sourceTree = "<group>"; };
 		A18698212274435500A51D74 /* setteiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setteiViewController.swift; sourceTree = "<group>"; };
 		A186987022769BF700A51D74 /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink.png; sourceTree = "<group>"; };
+		A186987E227B31D300A51D74 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		A1AB50842268108C00AA3B6A /* 隊形2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "隊形2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50872268108C00AA3B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AB50892268108C00AA3B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				A1AB50BD2269B54900AA3B6A /* humanSPE.png */,
 				A1AB50BF2269B5B500AA3B6A /* kyoshu.png */,
 				A1AB50BB2269721800AA3B6A /* settei.png */,
+				A186987E227B31D300A51D74 /* people.png */,
 				A13825E02269BAB7003ABCC5 /* 4-pink.png */,
 				A1AB50C12269B6ED00AA3B6A /* play.png */,
 				A13825E62269CE1A003ABCC5 /* runHuman.png */,
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A186987F227B31D300A51D74 /* people.png in Resources */,
 				A1AB50922268108E00AA3B6A /* LaunchScreen.storyboard in Resources */,
 				A186987122769BF700A51D74 /* pink.png in Resources */,
 				A13825E72269CE1D003ABCC5 /* runHuman.png in Resources */,
@@ -526,6 +530,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -581,6 +586,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

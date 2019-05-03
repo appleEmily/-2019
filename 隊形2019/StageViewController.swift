@@ -18,6 +18,7 @@ class StageViewController: UIViewController {
     var humans = [UIImageView]()
     var befores = [CGPoint]()
     var afters = [CGPoint]()
+    var speed: Double = 3.0
     var before_after: Bool = false
     
     
@@ -96,9 +97,16 @@ class StageViewController: UIViewController {
         for i in (0 ..< humans.count){
             humans[i].center = befores[i]
             humans[i].setNeedsDisplay()
-            
         }
-        
+        UIView.animate(withDuration: speed, animations: {
+            for i in (0 ..< self.humans.count) {
+                self.humans[i].center = self.afters[i]
+            }
+        }) { (fin) in
+            self.before_after = true
+            self.beforeBtn.tintColor = UIColor.red
+            self.afterBtn.tintColor = UIColor.black
+        }
     }
     
     

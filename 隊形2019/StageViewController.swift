@@ -89,6 +89,19 @@ class StageViewController: UIViewController {
         
     }
     
+    @IBAction func animation() {
+        beforeBtn.setTitleColor(UIColor.black, for: .normal)
+        afterBtn.setTitleColor(UIColor.black, for: .normal)
+        
+        for i in (0 ..< humans.count){
+            humans[i].center = befores[i]
+            humans[i].setNeedsDisplay()
+            
+        }
+        
+    }
+    
+    
     
     
 

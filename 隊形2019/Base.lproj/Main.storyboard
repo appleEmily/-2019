@@ -181,6 +181,9 @@
                                 <rect key="frame" x="220" y="310" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="play.png"/>
+                                <connections>
+                                    <action selector="animation" destination="EKO-ju-pFp" eventType="touchUpInside" id="Rp7-Gp-V1p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-NQ-sQz">
                                 <rect key="frame" x="291" y="309" width="45" height="45"/>

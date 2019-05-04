@@ -108,6 +108,23 @@ class StageViewController: UIViewController {
             self.afterBtn.tintColor = UIColor.black
         }
     }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        let location = touch.location(in: self.view)
+        currentHuman.center = location
+    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        let location = touch.location(in: self.view)
+        currentHuman.center = location
+        if before_after {
+            afters[currentHuman.tag] = location
+        } else {
+            befores[currentHuman.tag] = location
+            afters[currentHuman.tag] = location
+        }
+    }
+    
     
     
     

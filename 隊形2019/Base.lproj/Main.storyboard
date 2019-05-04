@@ -100,7 +100,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0r-cj-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="28"/>
+            <point key="canvasLocation" x="1086" y="28"/>
         </scene>
         <!--Stage View Controller-->
         <scene sceneID="3qk-4Y-p6z">
@@ -264,7 +264,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JN-vA-fby" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eEb-SB-Yeh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="179" y="1609"/>
+            <point key="canvasLocation" x="870" y="825"/>
         </scene>
         <!--Title View Controller-->
         <scene sceneID="5J2-qR-Suz">

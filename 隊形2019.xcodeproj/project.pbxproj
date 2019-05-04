@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.debug.xcconfig"; sourceTree = "<group>"; };
 		445E02B9452F114891008492 /* Pods-隊形2019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.release.xcconfig"; sourceTree = "<group>"; };
-		656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B037A5AA1C34A7FB61B7DE /* Pods-隊形2019Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CE6C17926823DBBCF2F959 /* Pods-隊形2019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019UITests.debug.xcconfig"; path = "Target Support Files/Pods-隊形2019UITests/Pods-隊形2019UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1023F252273F84F006041A6 /* trash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash2.png; sourceTree = "<group>"; };
@@ -81,10 +81,10 @@
 		A1AB50BD2269B54900AA3B6A /* humanSPE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanSPE.png; sourceTree = "<group>"; };
 		A1AB50BF2269B5B500AA3B6A /* kyoshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyoshu.png; sourceTree = "<group>"; };
 		A1AB50C12269B6ED00AA3B6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.release.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.release.xcconfig"; sourceTree = "<group>"; };
 		F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +215,7 @@
 				A1AB50802268108C00AA3B6A /* Sources */,
 				A1AB50812268108C00AA3B6A /* Frameworks */,
 				A1AB50822268108C00AA3B6A /* Resources */,
+				8496D3BC47D58B267C9A08BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +365,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8496D3BC47D58B267C9A08BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-隊形2019/Pods-隊形2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-隊形2019/Pods-隊形2019-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A65CA768E7DDAC5F67D7DB95 /* [CP] Check Pods Manifest.lock */ = {

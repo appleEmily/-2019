@@ -36,12 +36,6 @@ class StageViewController: UIViewController {
         
         taikeiName.text = text
         
-        /*値を正しく受け取れていないのか。
-        受け取ってデータが””になってる
-        */
-        
-        //beforeBtn.tintColor = UIColor.red
-        //afterBtn.tintColor = UIColor.black
         
     }
     
@@ -110,23 +104,52 @@ class StageViewController: UIViewController {
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let location = touch.location(in: self.view)
-        currentHuman.center = location
+        let view = touch.view!
+        let old = touch.previousLocation(in: self.view)
+        let new = touch.location(in: self.view)
+        view.frame.origin.x += (new.x - old.x)
+        view.frame.origin.y += (new.y - old.y)
+//currentHuman.center = location
     }
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = touches.first!
-        let location = touch.location(in: self.view)
-        currentHuman.center = location
-        if before_after {
-            afters[currentHuman.tag] = location
-        } else {
-            befores[currentHuman.tag] = location
-            afters[currentHuman.tag] = location
-        }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first! //このタッチイベントの場合確実に1つ以上タッチ点があるので`!`つけてOKです
+        let location = touch.location(in: self.view) //in: には対象となるビューを入れます
+        Swift.print(location)
     }
     
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        let touchevent = touches.first!
+//        let view = touchevent.view!
+//        let old = touchevent.previousLocation(in: self.view)
+//        let new = touchevent.location(in: self.view)
+//        view.frame.origin.x += (new.x - old.x)
+//        view.frame.origin.y += (new.y - old.y)
+//    }
     
     
- 
+    //きょめ
+//        override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//            let touch = touches.first!
+//            let location = touch.location(in: self.view)
+//            currentHuman.center = location
+//            if before_after {
+//                afters[currentHuman.tag] = location
+//            } else {
+//                befores[currentHuman.tag] = location
+//                afters[currentHuman.tag] = location
+//            }
+//        }
+    
+    
+    //ここから下は昔エミリが書いたやつ未完成
+    //おそらく　let の中身の定数にしたいものがはっきりしていない。
+    //if let location = touch.location(in: self.view) {
+    //   currentHuman.location = location
+    // if before_after {
+    //    afters[currentHuman.tag] = location
+    //} else {
+    //     befores[currentHuman.tag] = location
+    //    afters[currentHuman.tag] = location
+    
     
 }

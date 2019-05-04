@@ -17,7 +17,7 @@
 		A18698222274435500A51D74 /* setteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18698212274435500A51D74 /* setteiViewController.swift */; };
 		A186987122769BF700A51D74 /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987022769BF700A51D74 /* pink.png */; };
 		A186987F227B31D300A51D74 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987E227B31D300A51D74 /* people.png */; };
-		A1869881227DC18200A51D74 /* Pods_隊形2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1869880227DC18200A51D74 /* Pods_隊形2019.framework */; };
+		A1869883227DC89100A51D74 /* Pods_隊形2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1869882227DC89100A51D74 /* Pods_隊形2019.framework */; };
 		A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50872268108C00AA3B6A /* AppDelegate.swift */; };
 		A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50892268108C00AA3B6A /* ViewController.swift */; };
 		A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AB508B2268108C00AA3B6A /* Main.storyboard */; };
@@ -65,6 +65,7 @@
 		A186987022769BF700A51D74 /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink.png; sourceTree = "<group>"; };
 		A186987E227B31D300A51D74 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		A1869880227DC18200A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1869882227DC89100A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50842268108C00AA3B6A /* 隊形2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "隊形2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50872268108C00AA3B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AB50892268108C00AA3B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1869881227DC18200A51D74 /* Pods_隊形2019.framework in Frameworks */,
+				A1869883227DC89100A51D74 /* Pods_隊形2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +133,7 @@
 		60E13EB67B58DE3D61DB40D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1869882227DC89100A51D74 /* Pods_隊形2019.framework */,
 				A1869880227DC18200A51D74 /* Pods_隊形2019.framework */,
 				A7EBB3299AF755C546A535E1 /* Pods___2019.framework */,
 				FFB6F218A8E530E2011F2340 /* Pods___2019Tests.framework */,
@@ -755,7 +757,7 @@
 				A1AB50AB2268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A1AB50AC2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019" */ = {
 			isa = XCConfigurationList;
@@ -764,7 +766,7 @@
 				A1AB50AE2268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A1AB50AF2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019Tests" */ = {
 			isa = XCConfigurationList;
@@ -773,7 +775,7 @@
 				A1AB50B12268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A1AB50B22268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019UITests" */ = {
 			isa = XCConfigurationList;
@@ -782,7 +784,7 @@
 				A1AB50B42268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

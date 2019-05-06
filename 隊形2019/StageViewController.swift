@@ -130,8 +130,8 @@ class StageViewController: UIViewController {
         }
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        // gapXとgapYの初期化
         
+        //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
     }
@@ -141,37 +141,16 @@ class StageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        // touchesEndedと同じ処理
-//        self.touchesEnded(touches, with: event)
-//    }
-//
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // touchesEndedと同じ処理
+        self.touchesEnded(touches, with: event)
+    }
+
     
 //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        // touchesBeganと同じ処理
 //        self.touchesBegan(touches, with: event)
 //    }
-
-    //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//
-//        let aTouch = touches.first //as! UITouch
-//        // 移動した先の座標を取得.
-//        let location = aTouch?.location(in: self.view)
-//        // 移動する前の座標を取得.
-//        let prevLocation = aTouch!.previousLocation(in: self.view)
-//        // CGRect生成.
-//        var myFrame: CGRect = self.view.frame
-//        // ドラッグで移動したx, y距離をとる.
-//        let deltaX: CGFloat = (location?.x)! - prevLocation.x
-//        let deltaY: CGFloat = location!.y - prevLocation.y
-//        // 移動した分の距離をmyFrameの座標にプラスする.
-//        myFrame.origin.x += deltaX
-//        myFrame.origin.y += deltaY
-//        // frameにmyFrameを追加.
-//        self.view.frame = myFrame
-//    }
-    
-    
     
 //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        let touchevent = touches.first!

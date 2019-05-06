@@ -61,11 +61,13 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImage = UIImageView(image: UIImage(named: "people.png"))
+        let newImage = UIImageView(frame: CGRect(x: -80, y: -80, width: 45, height: 45))
+        
+        newImage.image = UIImage(named: "people.png")
         
         newImage.tag = count
-        newImage.image = UIImage(named: "humans.png")
-        newImage.center = CGPoint(x: view.center.x, y: view.center.y)
+        
+        newImage.center = self.view.center
         
         newImage.isUserInteractionEnabled = true //大切な文章だったっぽい　上のところを前にタイにCGRectにして見て
         
@@ -73,7 +75,7 @@ class StageViewController: UIViewController {
         befores.append(self.view.center)
         afters.append(self.view.center)
         view.addSubview(newImage)
-        count += 1
+        //count = count + 1
     }
     
     @IBAction func animation() {
@@ -109,12 +111,13 @@ class StageViewController: UIViewController {
                 
                 gapX = touch.location(in: view).x - touchedView.center.x
                 gapY = touch.location(in: view).y - touchedView.center.y
+                if count == 1 {
                 touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
             }
         }
     }
+}
     
-
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // touchesBeganと同じ処理だが、gapXとgapYはタッチ中で同じものを使い続ける
         // 最初にタッチした指のみ取得
@@ -131,26 +134,25 @@ class StageViewController: UIViewController {
         
         gapX = 0.0
         gapY = 0.0
-        
-        
-        
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // touchesEndedと同じ処理
-        self.touchesEnded(touches, with: event)
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        // touchesEndedと同じ処理
+//        self.touchesEnded(touches, with: event)
+//    }
+//
     
 //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        // touchesBeganと同じ処理
 //        self.touchesBegan(touches, with: event)
 //    }
-    
-    
-    
 
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 //
 //        let aTouch = touches.first //as! UITouch
 //        // 移動した先の座標を取得.

@@ -1,11 +1,6 @@
-//
 //  StageViewController.swift
-//  隊形2019
-//
 //  Created by 野崎絵未里 on 2019/04/19.
 //  Copyright © 2019年 野崎絵未里. All rights reserved.
-//
-
 import UIKit
 
 class StageViewController: UIViewController {
@@ -72,7 +67,7 @@ class StageViewController: UIViewController {
         newImage.image = UIImage(named: "humans.png")
         newImage.center = CGPoint(x: view.center.x, y: view.center.y)
         
-        newImage.isUserInteractionEnabled = true
+        newImage.isUserInteractionEnabled = true //大切な文章だったっぽい　上のところを前にタイにCGRectにして見て
         
         humans.append(newImage)
         befores.append(self.view.center)
@@ -112,12 +107,9 @@ class StageViewController: UIViewController {
         if let touch = touches.first {
             if let touchedView = touch.view {
                 
-                if count == 1 {
-                    gapX = touch.location(in: view).x - touchedView.center.x
-                    gapY = touch.location(in: view).y - touchedView.center.y
-                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-
-                }
+                gapX = touch.location(in: view).x - touchedView.center.x
+                gapY = touch.location(in: view).y - touchedView.center.y
+                touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
             }
         }
     }
@@ -129,18 +121,19 @@ class StageViewController: UIViewController {
         if let touch = touches.first {
             // タッチしたビューをviewプロパティで取得する
             if let touchedView = touch.view {
-                // tagでおじさんかそうでないかを判断する
-                if count == 1 {
-                    // gapX,gapYの取得は行わない
-                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-                }
+                
+                touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
             }
         }
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // gapXとgapYの初期化
+//        // gapXとgapYの初期化
+        
         gapX = 0.0
         gapY = 0.0
+        
+        
+        
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {

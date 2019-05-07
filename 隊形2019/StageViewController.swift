@@ -33,6 +33,7 @@ class StageViewController: UIViewController {
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func before() {
@@ -61,20 +62,20 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImage = UIImageView(frame: CGRect(x: -80, y: -80, width: 45, height: 45))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 40, height: 40))
         
-        newImage.image = UIImage(named: "people.png")
+        newImageView.image = UIImage(named: "people.png")
         
-        newImage.tag = count
+        newImageView.tag = 1
         
-        newImage.center = self.view.center
+        newImageView.center = self.view.center
         
-        newImage.isUserInteractionEnabled = true //大切な文章だったっぽい　上のところを前にタイにCGRectにして見て
+        newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
         
-        humans.append(newImage)
-        befores.append(self.view.center)
-        afters.append(self.view.center)
-        view.addSubview(newImage)
+        //humans.append(newImageView)
+        //befores.append(self.view.center)
+        //afters.append(self.view.center)
+        view.addSubview(newImageView)
         //count = count + 1
     }
     
@@ -111,12 +112,14 @@ class StageViewController: UIViewController {
                 
                 gapX = touch.location(in: view).x - touchedView.center.x
                 gapY = touch.location(in: view).y - touchedView.center.y
-                if count == 1 {
-                touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                if touchedView.tag == 1 {
+                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                    
+                }
+                
             }
         }
     }
-}
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // touchesBeganと同じ処理だが、gapXとgapYはタッチ中で同じものを使い続ける
@@ -126,6 +129,7 @@ class StageViewController: UIViewController {
             if let touchedView = touch.view {
                 
                 touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+               
             }
         }
     }

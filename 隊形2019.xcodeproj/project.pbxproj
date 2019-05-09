@@ -18,6 +18,7 @@
 		A186987122769BF700A51D74 /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987022769BF700A51D74 /* pink.png */; };
 		A186987F227B31D300A51D74 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987E227B31D300A51D74 /* people.png */; };
 		A1869883227DC89100A51D74 /* Pods_隊形2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1869882227DC89100A51D74 /* Pods_隊形2019.framework */; };
+		A194BA1C228434420096FBDA /* realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA1B228434420096FBDA /* realm.swift */; };
 		A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50872268108C00AA3B6A /* AppDelegate.swift */; };
 		A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50892268108C00AA3B6A /* ViewController.swift */; };
 		A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AB508B2268108C00AA3B6A /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		A186987E227B31D300A51D74 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		A1869880227DC18200A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869882227DC89100A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A194BA1B228434420096FBDA /* realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm.swift; sourceTree = "<group>"; };
 		A1AB50842268108C00AA3B6A /* 隊形2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "隊形2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50872268108C00AA3B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AB50892268108C00AA3B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		A1AB507B2268108B00AA3B6A = {
 			isa = PBXGroup;
 			children = (
+				A194BA1B228434420096FBDA /* realm.swift */,
 				A1AB50862268108C00AA3B6A /* 隊形2019 */,
 				A1AB509B2268108F00AA3B6A /* 隊形2019Tests */,
 				A1AB50A62268108F00AA3B6A /* 隊形2019UITests */,
@@ -449,6 +452,7 @@
 				A18698222274435500A51D74 /* setteiViewController.swift in Sources */,
 				A13825E32269C5E3003ABCC5 /* StageViewController.swift in Sources */,
 				A13825E52269C643003ABCC5 /* TitleViewController.swift in Sources */,
+				A194BA1C228434420096FBDA /* realm.swift in Sources */,
 				A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */,
 				A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */,
 			);

@@ -11,10 +11,13 @@ class StageViewController: UIViewController {
     var count: Int = 0
     var currentHuman: UIImageView!
     var humans = [UIImageView]()
+    var pinks = [UIImageView]()
     var befores = [CGPoint]()
     var afters = [CGPoint]()
     var speed: Double = 3.0
     var before_after: Bool = false
+    //is available
+    
     
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
@@ -52,6 +55,9 @@ class StageViewController: UIViewController {
         
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
         afterBtn.setTitleColor(UIColor.black, for: .normal)
+        
+        
+        
     }
     
     
@@ -66,18 +72,32 @@ class StageViewController: UIViewController {
         
         newImageView.image = UIImage(named: "people.png")
         
-        newImageView.tag = 1
+        newImageView.tag = humans.count + 1
         
         newImageView.center = self.view.center
         
         newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
         
-        //humans.append(newImageView)
-        //befores.append(self.view.center)
-        //afters.append(self.view.center)
+        humans.append(newImageView)
+        befores.append(self.view.center)
+        afters.append(self.view.center)
         view.addSubview(newImageView)
         //count = count + 1
     }
+    
+    @IBAction func changePink() {
+        
+        currentHuman.image = UIImage(named: "pink.png")
+        
+//        if humans.count > 0 {
+//            if pinks[currentHuman.tag] == true {
+//                currentHuman.image = UIImage(named: "pink.png")
+//            } else if pinks[currentHuman.tag] == false {
+//                currentHuman.image = UIImage(named: "pink.png")
+//            }
+//        }
+    }
+    
     
     @IBAction func animation() {
         beforeBtn.setTitleColor(UIColor.black, for: .normal)
@@ -97,13 +117,6 @@ class StageViewController: UIViewController {
             self.afterBtn.tintColor = UIColor.black
         }
     }
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        let touch = touches.first! //このタッチイベントの場合確実に1つ以上タッチ点があるので`!`つけてOKです
-//        let location = touch.location(in: self.view) //in: には対象となるビューを入れます
-//        Swift.print(location)
-//
-//    }
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 最初にタッチした指のみ取得
@@ -112,40 +125,46 @@ class StageViewController: UIViewController {
                 
                 gapX = touch.location(in: view).x - touchedView.center.x
                 gapY = touch.location(in: view).y - touchedView.center.y
-                if touchedView.tag == 1 {
+                if touchedView.tag >= 1 {
+                    
+                    
                     touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                    if (beforeBtn != nil) {
+                        befores[touchedView.tag - 1] = touchedView.center
+                        
+                    } else if (afterBtn != nil) {
+                        afters[touchedView.tag - 1] = touchedView.center
+                    }
                     
                 }
                 
             }
         }
     }
-    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // touchesBeganと同じ処理だが、gapXとgapYはタッチ中で同じものを使い続ける
         // 最初にタッチした指のみ取得
         if let touch = touches.first {
             // タッチしたビューをviewプロパティで取得する
             if let touchedView = touch.view {
-                
+                if touchedView.tag >= 1 {
                 touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-                //touchedView.center = location
-               
+                    
+                    if (beforeBtn != nil) {
+                    befores[touchedView.tag - 1] = touchedView.center
+                    } else if (afterBtn != nil) {
+                    afters[touchedView.tag - 1] = touchedView.center
+                    }
+                }
             }
         }
     }
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
-        
-//        if before_after {
-//                afters[currentHuman.tag] = location
-//            } else {
-//                 befores[currentHuman.tag] = location
-//                afters[currentHuman.tag] = location
-//        }
     }
     
     override func didReceiveMemoryWarning() {

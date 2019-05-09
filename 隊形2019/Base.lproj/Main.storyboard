@@ -111,9 +111,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J22-wv-8y3">
-                                <rect key="frame" x="428" y="299" width="50" height="60"/>
+                                <rect key="frame" x="428" y="299" width="50" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="kyoshu.png"/>
+                                <connections>
+                                    <action selector="kyoshu" destination="EKO-ju-pFp" eventType="touchUpInside" id="7K8-Uo-sks"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKF-Na-Icf">
                                 <rect key="frame" x="33" y="315" width="64" height="47"/>

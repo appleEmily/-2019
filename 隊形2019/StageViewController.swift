@@ -129,6 +129,7 @@ class StageViewController: UIViewController {
             if let touchedView = touch.view {
                 
                 touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                //touchedView.center = location
                
             }
         }
@@ -138,6 +139,13 @@ class StageViewController: UIViewController {
         //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
+        
+//        if before_after {
+//                afters[currentHuman.tag] = location
+//            } else {
+//                 befores[currentHuman.tag] = location
+//                afters[currentHuman.tag] = location
+//        }
     }
     
     override func didReceiveMemoryWarning() {

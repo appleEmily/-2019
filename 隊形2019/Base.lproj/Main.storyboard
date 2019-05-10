@@ -220,6 +220,7 @@
                     <connections>
                         <outlet property="afterBtn" destination="EhO-Pv-Avh" id="krJ-2A-mxR"/>
                         <outlet property="beforeBtn" destination="xKF-Na-Icf" id="ch5-zr-IgM"/>
+                        <outlet property="deleteBtn" destination="Ipw-Am-Bpq" id="V53-ox-66w"/>
                         <outlet property="taikeiName" destination="Ggb-tk-liz" id="KKa-V2-Jjj"/>
                     </connections>
                 </viewController>
@@ -273,11 +274,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="隊形の名前を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-dG-aUF">
-                                <rect key="frame" x="151" y="110" width="360" height="51"/>
+                                <rect key="frame" x="152" y="110" width="360" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w0-g1-rOi">
                                 <rect key="frame" x="260" y="231" width="144" height="52"/>
@@ -298,13 +304,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0f-R0-m89">
-                                <rect key="frame" x="20" y="20" width="85" height="58"/>
+                                <rect key="frame" x="18" y="13" width="85" height="58"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94571560210000005" green="0.99942404029999998" blue="0.49802038910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="24"/>
                                 <state key="normal" title="&lt; back">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backToTop" destination="UWr-IS-LCQ" eventType="touchUpInside" id="Itp-WE-Djf"/>
                                 </connections>

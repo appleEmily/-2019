@@ -16,6 +16,7 @@ class StageViewController: UIViewController {
     var afters = [CGPoint]()
     var speed: Double = 3.0
     var isAfter: Bool = false
+    var deletee: Bool = true
     
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
@@ -26,6 +27,8 @@ class StageViewController: UIViewController {
     //ボタンの名前
     @IBOutlet weak var beforeBtn: UIButton!
     @IBOutlet weak var afterBtn: UIButton!
+    
+    @IBOutlet weak var deleteBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -162,7 +165,6 @@ class StageViewController: UIViewController {
                 gapY = touch.location(in: view).y - touchedView.center.y
                 if touchedView.tag >= 1 {
                     
-                    
                     touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
                     if !isAfter {
                         befores[touchedView.tag - 1] = touchedView.center
@@ -201,7 +203,24 @@ class StageViewController: UIViewController {
         //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
+            if let touch = touches.first {
+                // タッチしたビューをviewプロパティで取得する
+                if let touchedView = touch.view {
+                    if touchedView.tag >= 1 {
+                        touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                        if deletee {
+                            if !isAfter {
+                                befores.remove(at: touchedView.tag - 1)
+                            } else {
+                                afters.remove(at: touchedView.tag - 1)
+                            }
+                        }
+                    }
+                }
+            }    
     }
+            
+            
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         // touchesEndedと同じ処理
@@ -213,7 +232,7 @@ class StageViewController: UIViewController {
     }
     
     @IBAction func delete() {
-        
+            deletee = true
     }
     
     

@@ -208,5 +208,15 @@ class StageViewController: UIViewController {
         self.touchesEnded(touches, with: event)
     }
     
+    @IBAction func changeSpeed(_ sender: UISlider) {
+        speed = Double(sender.value)
+    }
+    
+    @IBAction func delete() {
+        
+    }
+    
+    
+    
 
 }

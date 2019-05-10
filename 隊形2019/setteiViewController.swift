@@ -9,6 +9,8 @@
 import UIKit
 
 class setteiViewController: UIViewController {
+    
+    var speed: Double = 3.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,9 @@ class setteiViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
     }
+    
+    
+    
 
     
 

@@ -19,6 +19,7 @@
 		A186987F227B31D300A51D74 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = A186987E227B31D300A51D74 /* people.png */; };
 		A1869883227DC89100A51D74 /* Pods_隊形2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1869882227DC89100A51D74 /* Pods_隊形2019.framework */; };
 		A194BA1C228434420096FBDA /* realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA1B228434420096FBDA /* realm.swift */; };
+		A194BA2022851D3A0096FBDA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA1F22851D3A0096FBDA /* TableViewController.swift */; };
 		A1AB50882268108C00AA3B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50872268108C00AA3B6A /* AppDelegate.swift */; };
 		A1AB508A2268108C00AA3B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB50892268108C00AA3B6A /* ViewController.swift */; };
 		A1AB508D2268108C00AA3B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AB508B2268108C00AA3B6A /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		A1869880227DC18200A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869882227DC89100A51D74 /* Pods_隊形2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_隊形2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194BA1B228434420096FBDA /* realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm.swift; sourceTree = "<group>"; };
+		A194BA1F22851D3A0096FBDA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A1AB50842268108C00AA3B6A /* 隊形2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "隊形2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AB50872268108C00AA3B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AB50892268108C00AA3B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				A13825E42269C643003ABCC5 /* TitleViewController.swift */,
 				A13825E22269C5E3003ABCC5 /* StageViewController.swift */,
 				A18698212274435500A51D74 /* setteiViewController.swift */,
+				A194BA1F22851D3A0096FBDA /* TableViewController.swift */,
 				A1AB508B2268108C00AA3B6A /* Main.storyboard */,
 				A1AB508E2268108E00AA3B6A /* Assets.xcassets */,
 				A1AB50902268108E00AA3B6A /* LaunchScreen.storyboard */,
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18698222274435500A51D74 /* setteiViewController.swift in Sources */,
+				A194BA2022851D3A0096FBDA /* TableViewController.swift in Sources */,
 				A13825E32269C5E3003ABCC5 /* StageViewController.swift in Sources */,
 				A13825E52269C643003ABCC5 /* TitleViewController.swift in Sources */,
 				A194BA1C228434420096FBDA /* realm.swift in Sources */,
@@ -761,7 +765,7 @@
 				A1AB50AB2268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A1AB50AC2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019" */ = {
 			isa = XCConfigurationList;
@@ -770,7 +774,7 @@
 				A1AB50AE2268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A1AB50AF2268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019Tests" */ = {
 			isa = XCConfigurationList;
@@ -779,7 +783,7 @@
 				A1AB50B12268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		A1AB50B22268108F00AA3B6A /* Build configuration list for PBXNativeTarget "隊形2019UITests" */ = {
 			isa = XCConfigurationList;
@@ -788,7 +792,7 @@
 				A1AB50B42268108F00AA3B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

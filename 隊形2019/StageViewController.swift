@@ -17,6 +17,7 @@ class StageViewController: UIViewController {
     var speed: Double = 3.0
     var isAfter: Bool = false
     var deletee: Bool = true
+    //var first: Bool = true
     
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
@@ -42,6 +43,7 @@ class StageViewController: UIViewController {
     
     @IBAction func before() {
         isAfter = false
+        //first = true
          beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.red, for: .normal)
         
@@ -49,6 +51,7 @@ class StageViewController: UIViewController {
             humans[i].center = befores[i]
             
             humans[i].setNeedsDisplay()
+            
         }
     
     }
@@ -58,7 +61,12 @@ class StageViewController: UIViewController {
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
         afterBtn.setTitleColor(UIColor.black, for: .normal)
         for i in (0 ..< humans.count) {
-            humans[i].center = afters[i]
+            humans[i].center = befores[i]
+//            if first {
+//                humans[i].center = befores[i]
+//            } else {
+//                humans[i].center = afters[i]
+//            }
             
             humans[i].setNeedsDisplay()
         }
@@ -172,7 +180,6 @@ class StageViewController: UIViewController {
                     } else {
                         afters[touchedView.tag - 1] = touchedView.center
                     }
-                    
                 }
                 
             }
@@ -185,14 +192,24 @@ class StageViewController: UIViewController {
         if let touch = touches.first {
             // タッチしたビューをviewプロパティで取得する
             if let touchedView = touch.view {
-                if touchedView.tag >= 1 {
                 touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                if touchedView.tag >= 1 {
                     
                     if !isAfter {
                     befores[touchedView.tag - 1] = touchedView.center
                     } else {
                     afters[touchedView.tag - 1] = touchedView.center
                     }
+//                    if deletee {
+//                        if !isAfter {
+//                            befores.remove(at: touchedView.tag - 1)
+//                        } else {
+//                            afters.remove(at: touchedView.tag - 1)
+//                        }
+                    
+//
+//                        humans.remove(at: touchedView.tag - 1)
+//                    }
                 }
             }
         }
@@ -208,16 +225,24 @@ class StageViewController: UIViewController {
                 if let touchedView = touch.view {
                     if touchedView.tag >= 1 {
                         touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-                        if deletee {
-                            if !isAfter {
-                                befores.remove(at: touchedView.tag - 1)
-                            } else {
-                                afters.remove(at: touchedView.tag - 1)
-                            }
-                        }
+                        
+//                        if deletee {
+//
+//                            if !isAfter {
+//                                befores.remove(at: touchedView.tag - 1)
+//                            } else {
+//                                afters.remove(at: touchedView.tag - 1)
+//                            }
+//                            humans.remove(at: touchedView.tag - 1)
+//                            humans[touchedView.tag - 1].removeFromSuperview()
+//                            //humans[touchedView.tag - 1] = nil
+//
+//                        }
+
+                        
                     }
                 }
-            }    
+            }
     }
             
             

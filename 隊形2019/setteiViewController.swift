@@ -10,7 +10,6 @@ import UIKit
 
 class setteiViewController: UIViewController {
     
-    var speed: Double = 3.0
 
     override func viewDidLoad() {
         super.viewDidLoad()

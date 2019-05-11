@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A194BA2E228691ED0096FBDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA2D228691ED0096FBDA /* AppDelegate.swift */; };
+		A194BA30228691ED0096FBDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA2F228691ED0096FBDA /* ViewController.swift */; };
+		A194BA33228691ED0096FBDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A194BA31228691ED0096FBDA /* Main.storyboard */; };
+		A194BA35228691EE0096FBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194BA34228691EE0096FBDA /* Assets.xcassets */; };
+		A194BA38228691EE0096FBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A194BA36228691EE0096FBDA /* LaunchScreen.storyboard */; };
+		A194BA43228691EF0096FBDA /* chikichikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA42228691EF0096FBDA /* chikichikiTests.swift */; };
+		A194BA4E228691EF0096FBDA /* chikichikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194BA4D228691EF0096FBDA /* chikichikiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A194BA3F228691EF0096FBDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A194BA22228691EC0096FBDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A194BA29228691ED0096FBDA;
+			remoteInfo = chikichiki;
+		};
+		A194BA4A228691EF0096FBDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A194BA22228691EC0096FBDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A194BA29228691ED0096FBDA;
+			remoteInfo = chikichiki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A194BA2A228691ED0096FBDA /* chikichiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chikichiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A194BA2D228691ED0096FBDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A194BA2F228691ED0096FBDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A194BA32228691ED0096FBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A194BA34228691EE0096FBDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A194BA37228691EE0096FBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A194BA39228691EE0096FBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A194BA3E228691EF0096FBDA /* chikichikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chikichikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A194BA42228691EF0096FBDA /* chikichikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chikichikiTests.swift; sourceTree = "<group>"; };
+		A194BA44228691EF0096FBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A194BA49228691EF0096FBDA /* chikichikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chikichikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A194BA4D228691EF0096FBDA /* chikichikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chikichikiUITests.swift; sourceTree = "<group>"; };
+		A194BA4F228691EF0096FBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A194BA27228691ED0096FBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA3B228691EF0096FBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA46228691EF0096FBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A194BA21228691EC0096FBDA = {
+			isa = PBXGroup;
+			children = (
+				A194BA2C228691ED0096FBDA /* chikichiki */,
+				A194BA41228691EF0096FBDA /* chikichikiTests */,
+				A194BA4C228691EF0096FBDA /* chikichikiUITests */,
+				A194BA2B228691ED0096FBDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A194BA2B228691ED0096FBDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A194BA2A228691ED0096FBDA /* chikichiki.app */,
+				A194BA3E228691EF0096FBDA /* chikichikiTests.xctest */,
+				A194BA49228691EF0096FBDA /* chikichikiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A194BA2C228691ED0096FBDA /* chikichiki */ = {
+			isa = PBXGroup;
+			children = (
+				A194BA2D228691ED0096FBDA /* AppDelegate.swift */,
+				A194BA2F228691ED0096FBDA /* ViewController.swift */,
+				A194BA31228691ED0096FBDA /* Main.storyboard */,
+				A194BA34228691EE0096FBDA /* Assets.xcassets */,
+				A194BA36228691EE0096FBDA /* LaunchScreen.storyboard */,
+				A194BA39228691EE0096FBDA /* Info.plist */,
+			);
+			path = chikichiki;
+			sourceTree = "<group>";
+		};
+		A194BA41228691EF0096FBDA /* chikichikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A194BA42228691EF0096FBDA /* chikichikiTests.swift */,
+				A194BA44228691EF0096FBDA /* Info.plist */,
+			);
+			path = chikichikiTests;
+			sourceTree = "<group>";
+		};
+		A194BA4C228691EF0096FBDA /* chikichikiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A194BA4D228691EF0096FBDA /* chikichikiUITests.swift */,
+				A194BA4F228691EF0096FBDA /* Info.plist */,
+			);
+			path = chikichikiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A194BA29228691ED0096FBDA /* chikichiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A194BA52228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichiki" */;
+			buildPhases = (
+				A194BA26228691ED0096FBDA /* Sources */,
+				A194BA27228691ED0096FBDA /* Frameworks */,
+				A194BA28228691ED0096FBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chikichiki;
+			productName = chikichiki;
+			productReference = A194BA2A228691ED0096FBDA /* chikichiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A194BA3D228691EF0096FBDA /* chikichikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A194BA55228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichikiTests" */;
+			buildPhases = (
+				A194BA3A228691EF0096FBDA /* Sources */,
+				A194BA3B228691EF0096FBDA /* Frameworks */,
+				A194BA3C228691EF0096FBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A194BA40228691EF0096FBDA /* PBXTargetDependency */,
+			);
+			name = chikichikiTests;
+			productName = chikichikiTests;
+			productReference = A194BA3E228691EF0096FBDA /* chikichikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A194BA48228691EF0096FBDA /* chikichikiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A194BA58228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichikiUITests" */;
+			buildPhases = (
+				A194BA45228691EF0096FBDA /* Sources */,
+				A194BA46228691EF0096FBDA /* Frameworks */,
+				A194BA47228691EF0096FBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A194BA4B228691EF0096FBDA /* PBXTargetDependency */,
+			);
+			name = chikichikiUITests;
+			productName = chikichikiUITests;
+			productReference = A194BA49228691EF0096FBDA /* chikichikiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A194BA22228691EC0096FBDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "野崎絵未里";
+				TargetAttributes = {
+					A194BA29228691ED0096FBDA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A194BA3D228691EF0096FBDA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A194BA29228691ED0096FBDA;
+					};
+					A194BA48228691EF0096FBDA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A194BA29228691ED0096FBDA;
+					};
+				};
+			};
+			buildConfigurationList = A194BA25228691EC0096FBDA /* Build configuration list for PBXProject "chikichiki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A194BA21228691EC0096FBDA;
+			productRefGroup = A194BA2B228691ED0096FBDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A194BA29228691ED0096FBDA /* chikichiki */,
+				A194BA3D228691EF0096FBDA /* chikichikiTests */,
+				A194BA48228691EF0096FBDA /* chikichikiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A194BA28228691ED0096FBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A194BA38228691EE0096FBDA /* LaunchScreen.storyboard in Resources */,
+				A194BA35228691EE0096FBDA /* Assets.xcassets in Resources */,
+				A194BA33228691ED0096FBDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA3C228691EF0096FBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA47228691EF0096FBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A194BA26228691ED0096FBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A194BA30228691ED0096FBDA /* ViewController.swift in Sources */,
+				A194BA2E228691ED0096FBDA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA3A228691EF0096FBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A194BA43228691EF0096FBDA /* chikichikiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A194BA45228691EF0096FBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A194BA4E228691EF0096FBDA /* chikichikiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A194BA40228691EF0096FBDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A194BA29228691ED0096FBDA /* chikichiki */;
+			targetProxy = A194BA3F228691EF0096FBDA /* PBXContainerItemProxy */;
+		};
+		A194BA4B228691EF0096FBDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A194BA29228691ED0096FBDA /* chikichiki */;
+			targetProxy = A194BA4A228691EF0096FBDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A194BA31228691ED0096FBDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A194BA32228691ED0096FBDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A194BA36228691EE0096FBDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A194BA37228691EE0096FBDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A194BA50228691EF0096FBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A194BA51228691EF0096FBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A194BA53228691EF0096FBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
+				INFOPLIST_FILE = chikichiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A194BA54228691EF0096FBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 743J7J89D4;
+				INFOPLIST_FILE = chikichiki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichiki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A194BA56228691EF0096FBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = chikichikiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chikichiki.app/chikichiki";
+			};
+			name = Debug;
+		};
+		A194BA57228691EF0096FBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = chikichikiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichikiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chikichiki.app/chikichiki";
+			};
+			name = Release;
+		};
+		A194BA59228691EF0096FBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = chikichikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = chikichiki;
+			};
+			name = Debug;
+		};
+		A194BA5A228691EF0096FBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = chikichikiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.chikichikiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = chikichiki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A194BA25228691EC0096FBDA /* Build configuration list for PBXProject "chikichiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A194BA50228691EF0096FBDA /* Debug */,
+				A194BA51228691EF0096FBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A194BA52228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A194BA53228691EF0096FBDA /* Debug */,
+				A194BA54228691EF0096FBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A194BA55228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A194BA56228691EF0096FBDA /* Debug */,
+				A194BA57228691EF0096FBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A194BA58228691EF0096FBDA /* Build configuration list for PBXNativeTarget "chikichikiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A194BA59228691EF0096FBDA /* Debug */,
+				A194BA5A228691EF0096FBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A194BA22228691EC0096FBDA /* Project object */;
+}

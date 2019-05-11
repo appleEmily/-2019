@@ -7,10 +7,18 @@
 //
 
 import Foundation
+
 import RealmSwift
 
-//final class save: Object {
-//    
-//    @objc dynamic var titleName
-//    
-//}
+class Save: Object {
+    
+    //@objc dynamic var beforeMove: Double = 
+    @objc dynamic var titleName: String = ""
+    
+    
+    
+    
+    
+    
+
+}

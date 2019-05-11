@@ -2,8 +2,15 @@
 //  Created by 野崎絵未里 on 2019/04/19.
 //  Copyright © 2019年 野崎絵未里. All rights reserved.
 import UIKit
+import RealmSwift
 
 class StageViewController: UIViewController {
+    
+    let realm = try! Realm()
+    var save = Save()
+    
+    
+    
     
     //受け取った名前
     var text: String!
@@ -17,7 +24,7 @@ class StageViewController: UIViewController {
     var speed: Double = 3.0
     var isAfter: Bool = false
     var deletee: Bool = true
-    //var first: Bool = true
+    var first: Bool = true
     
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
@@ -43,8 +50,8 @@ class StageViewController: UIViewController {
     
     @IBAction func before() {
         isAfter = false
-        //first = true
-         beforeBtn.setTitleColor(UIColor.black, for: .normal)
+        
+        beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.red, for: .normal)
         
         for i in (0 ..< humans.count) {
@@ -53,7 +60,7 @@ class StageViewController: UIViewController {
             humans[i].setNeedsDisplay()
             
         }
-    
+        
     }
     
     @IBAction func past() {
@@ -61,15 +68,16 @@ class StageViewController: UIViewController {
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
         afterBtn.setTitleColor(UIColor.black, for: .normal)
         for i in (0 ..< humans.count) {
-            humans[i].center = befores[i]
-//            if first {
-//                humans[i].center = befores[i]
-//            } else {
-//                humans[i].center = afters[i]
-//            }
+            if first {
+                humans[i].center = befores[i]
+            } else {
+                humans[i].center = afters[i]
+            }
+            
             
             humans[i].setNeedsDisplay()
         }
+        first = false
         
         
     }
@@ -196,56 +204,56 @@ class StageViewController: UIViewController {
                 if touchedView.tag >= 1 {
                     
                     if !isAfter {
-                    befores[touchedView.tag - 1] = touchedView.center
+                        befores[touchedView.tag - 1] = touchedView.center
                     } else {
-                    afters[touchedView.tag - 1] = touchedView.center
+                        afters[touchedView.tag - 1] = touchedView.center
                     }
-//                    if deletee {
-//                        if !isAfter {
-//                            befores.remove(at: touchedView.tag - 1)
-//                        } else {
-//                            afters.remove(at: touchedView.tag - 1)
-//                        }
+                    //                    if deletee {
+                    //                        if !isAfter {
+                    //                            befores.remove(at: touchedView.tag - 1)
+                    //                        } else {
+                    //                            afters.remove(at: touchedView.tag - 1)
+                    //                        }
                     
-//
-//                        humans.remove(at: touchedView.tag - 1)
-//                    }
+                    //
+                    //                        humans.remove(at: touchedView.tag - 1)
+                    //                    }
                 }
             }
         }
     }
-        
-        override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
-            if let touch = touches.first {
-                // タッチしたビューをviewプロパティで取得する
-                if let touchedView = touch.view {
-                    if touchedView.tag >= 1 {
-                        touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-                        
-//                        if deletee {
-//
-//                            if !isAfter {
-//                                befores.remove(at: touchedView.tag - 1)
-//                            } else {
-//                                afters.remove(at: touchedView.tag - 1)
-//                            }
-//                            humans.remove(at: touchedView.tag - 1)
-//                            humans[touchedView.tag - 1].removeFromSuperview()
-//                            //humans[touchedView.tag - 1] = nil
-//
-//                        }
-
-                        
-                    }
+        if let touch = touches.first {
+            // タッチしたビューをviewプロパティで取得する
+            if let touchedView = touch.view {
+                if touchedView.tag >= 1 {
+                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+                    
+                    //                        if deletee {
+                    //
+                    //                            if !isAfter {
+                    //                                befores.remove(at: touchedView.tag - 1)
+                    //                            } else {
+                    //                                afters.remove(at: touchedView.tag - 1)
+                    //                            }
+                    //                            humans.remove(at: touchedView.tag - 1)
+                    //                            humans[touchedView.tag - 1].removeFromSuperview()
+                    //                            //humans[touchedView.tag - 1] = nil
+                    //
+                    //                        }
+                    
+                    
                 }
             }
+        }
     }
-            
-            
+    
+    
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         // touchesEndedと同じ処理
@@ -257,10 +265,10 @@ class StageViewController: UIViewController {
     }
     
     @IBAction func delete() {
-            deletee = true
+        deletee = true
     }
     
     
     
-
+    
 }

@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
         // Do any additional setup after loading the view, typically from a nib.
         //画面を開いた時に最初に出るやつ
         
@@ -27,7 +31,7 @@ class ViewController: UIViewController {
     @IBAction func pastTaikei() {
     }
     
-
-
+    
+    
 }
 

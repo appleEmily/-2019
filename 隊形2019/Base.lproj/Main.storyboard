@@ -211,7 +211,7 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3.5" minValue="1" maxValue="10" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
                                 <rect key="frame" x="415" y="324" width="216" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="changeSpeed:" destination="EKO-ju-pFp" eventType="valueChanged" id="ZnC-tW-RTi"/>
                                 </connections>

@@ -12,6 +12,7 @@ class StageViewController: UIViewController {
     
     
     
+    
     //受け取った名前
     var text: String!
     
@@ -20,6 +21,7 @@ class StageViewController: UIViewController {
     var humans = [UIImageView]()
     var pinks = [UIImageView]()
     var befores = [CGPoint]()
+    
     var afters = [CGPoint]()
     var speed: Double = 3.0
     var isAfter: Bool = false
@@ -28,6 +30,8 @@ class StageViewController: UIViewController {
     
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
+    
+    
     
     
     @IBOutlet weak var taikeiName: UILabel!
@@ -45,6 +49,23 @@ class StageViewController: UIViewController {
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        
+        save.titleName   = String(text)
+        //配列の保存
+        for i in (0 ..< humans.count) {
+            
+        
+            save.beforeMoveX.append(Double(befores[i].x))
+            save.beforeMoveY.append(Double(befores[i].y))
+            save.afterMoveX.append(Double(afters[i].x))
+            save.afterMoveY.append(Double(afters[i].y))
+            
+        }
+        //save.beforeMove   =
+        
+        try! realm.write {
+            realm.add(save)
+        }
         
     }
     

@@ -209,7 +209,7 @@
                                     <action selector="changePink" destination="EKO-ju-pFp" eventType="touchUpInside" id="Qj8-dJ-9Sf"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="5" maxValue="20" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="20" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
                                 <rect key="frame" x="415" y="324" width="216" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <connections>

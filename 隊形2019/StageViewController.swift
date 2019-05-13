@@ -10,7 +10,7 @@ class StageViewController: UIViewController {
     var save = Save()
     
     
-    
+
     
     
     //受け取った名前
@@ -51,6 +51,9 @@ class StageViewController: UIViewController {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         
         save.titleName   = String(text)
+        
+        save.titleName = taikeiName.text!
+        
         //配列の保存
         for i in (0 ..< humans.count) {
             
@@ -67,7 +70,8 @@ class StageViewController: UIViewController {
             realm.add(save)
         }
         
-    }
+        
+            }
     
     @IBAction func before() {
         isAfter = false

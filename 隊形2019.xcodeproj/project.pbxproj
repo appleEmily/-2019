@@ -31,6 +31,8 @@
 		A1AB50BE2269B54900AA3B6A /* humanSPE.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BD2269B54900AA3B6A /* humanSPE.png */; };
 		A1AB50C02269B5B500AA3B6A /* kyoshu.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BF2269B5B500AA3B6A /* kyoshu.png */; };
 		A1AB50C22269B6ED00AA3B6A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50C12269B6ED00AA3B6A /* play.png */; };
+		A1E3860422897D0200836D2F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3860222897D0200836D2F /* TableViewCell.swift */; };
+		A1E3860522897D0200836D2F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E3860322897D0200836D2F /* TableViewCell.xib */; };
 		F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		A1AB50BD2269B54900AA3B6A /* humanSPE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanSPE.png; sourceTree = "<group>"; };
 		A1AB50BF2269B5B500AA3B6A /* kyoshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyoshu.png; sourceTree = "<group>"; };
 		A1AB50C12269B6ED00AA3B6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A1E3860222897D0200836D2F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A1E3860322897D0200836D2F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.release.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.release.xcconfig"; sourceTree = "<group>"; };
 		F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				A13825EC2269CFD3003ABCC5 /* justPeople.png */,
 				A1023F252273F84F006041A6 /* trash2.png */,
 				A186987022769BF700A51D74 /* pink.png */,
+				A1E3860222897D0200836D2F /* TableViewCell.swift */,
+				A1E3860322897D0200836D2F /* TableViewCell.xib */,
 			);
 			path = "隊形2019";
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				A1AB50C02269B5B500AA3B6A /* kyoshu.png in Resources */,
 				A1AB508F2268108E00AA3B6A /* Assets.xcassets in Resources */,
 				A1AB50BE2269B54900AA3B6A /* humanSPE.png in Resources */,
+				A1E3860522897D0200836D2F /* TableViewCell.xib in Resources */,
 				A13825ED2269CFD3003ABCC5 /* justPeople.png in Resources */,
 				A1023F262273F84F006041A6 /* trash2.png in Resources */,
 				A1AB50BC2269721900AA3B6A /* settei.png in Resources */,
@@ -453,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18698222274435500A51D74 /* setteiViewController.swift in Sources */,
+				A1E3860422897D0200836D2F /* TableViewCell.swift in Sources */,
 				A194BA2022851D3A0096FBDA /* TableViewController.swift in Sources */,
 				A13825E32269C5E3003ABCC5 /* StageViewController.swift in Sources */,
 				A13825E52269C643003ABCC5 /* TitleViewController.swift in Sources */,

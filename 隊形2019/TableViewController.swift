@@ -13,7 +13,9 @@ import RealmSwift
 class TableViewController: UITableViewController {
     
     let realm = try! Realm()
+    //dataがとっていた変数を入れる箱
     var data:Results<Save>!
+    
     
     
     
@@ -23,6 +25,7 @@ class TableViewController: UITableViewController {
         
         data = realm.objects(Save.self)
         //この行がわからない
+        //StageViewController にあるtaikeiName(String)をれrealmでほぞんしてある。その値を参照したい。
         //taikeiName.text = data[number].taikeiName
         
         

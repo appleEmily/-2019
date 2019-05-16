@@ -10,9 +10,13 @@ import UIKit
 
 import RealmSwift
 
+
 class TableViewController: UITableViewController {
     
+    @IBOutlet weak var back: UIBarButtonItem!
+    
     let realm = try! Realm()
+    
     //dataがとっていた変数を入れる箱
     var data:Results<Save>!
     
@@ -59,5 +63,11 @@ class TableViewController: UITableViewController {
         
         if editingStyle == UITableViewCell.EditingStyle.delete{
     }
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
     }
 }

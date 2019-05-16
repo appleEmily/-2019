@@ -27,11 +27,8 @@ class StageViewController: UIViewController {
     var isAfter: Bool = false
     var deletee: Bool = true
     var first: Bool = true
-    
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
-    
-    
     
     
     @IBOutlet weak var taikeiName: UILabel!
@@ -64,7 +61,7 @@ class StageViewController: UIViewController {
             save.afterMoveY.append(Double(afters[i].y))
             
         }
-        //save.beforeMove   =
+        
         
         try! realm.write {
             realm.add(save)

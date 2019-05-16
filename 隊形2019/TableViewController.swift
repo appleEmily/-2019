@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import RealmSwift
 
 
@@ -15,7 +14,10 @@ class TableViewController: UITableViewController {
     
     @IBOutlet weak var back: UIBarButtonItem!
     
+    
     let realm = try! Realm()
+    
+    var text2:String!
     
     //dataがとっていた変数を入れる箱
     var data:Results<Save>!
@@ -48,7 +50,7 @@ class TableViewController: UITableViewController {
         // セルの内容を取得
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         
-        let titleNameBox = data[indexPath.row].titleName
+        var titleNameBox = data[indexPath.row].titleName
         let bmoveX = data[indexPath.row].beforeMoveX
         let bmoveY = data[indexPath.row].beforeMoveY
         let amoveX = data[indexPath.row].afterMoveX
@@ -56,13 +58,28 @@ class TableViewController: UITableViewController {
         
         cell.saveTitleName.text = titleNameBox
         
+        text2 = titleNameBox
+        
+        
         
         return cell
     }
+    
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == UITableViewCell.EditingStyle.delete{
     }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "reopen" {
+            
+            let stageViewController = segue.destination as? StageViewController
+            
+            stageViewController?.text = text2
+            
+        }
     }
     
     @IBAction func back(_ sender: Any) {
@@ -70,4 +87,6 @@ class TableViewController: UITableViewController {
         self.dismiss(animated: true, completion: nil)
         
     }
+    
+    
 }

@@ -68,7 +68,9 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        if editingStyle == UITableViewCell.EditingStyle.delete{
+        //let dataSaved = 
+        
+        //if editingStyle == UITableViewCell.EditingStyle.delete{
     }
     }
     
@@ -78,6 +80,7 @@ class TableViewController: UITableViewController {
             let stageViewController = segue.destination as? StageViewController
             
             stageViewController?.text = text2
+            
             
         }
     }

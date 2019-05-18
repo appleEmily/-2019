@@ -25,6 +25,9 @@ class setteiViewController: UIViewController {
     
     
     
+    
+    
+    
 
     
 

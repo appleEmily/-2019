@@ -23,8 +23,4 @@ class Save: Object {
     let afterMoveX = List<Double>()
     let afterMoveY = List<Double>()
     
-    
-
-    
-
 }

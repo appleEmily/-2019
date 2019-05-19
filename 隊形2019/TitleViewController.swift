@@ -15,9 +15,9 @@ class TitleViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goStage" {
-            let stageViewController = segue.destination as? StageViewController
+            let svc = segue.destination as? StageViewController
             
-            stageViewController?.text = titleName.text
+            svc?.text = titleName.text
 
         }
     }

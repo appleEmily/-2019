@@ -9,10 +9,7 @@ class StageViewController: UIViewController {
     let realm = try! Realm()
     var save = Save()
     
-    
 
-    
-    
     //受け取った名前
     var text: String!
     var SavedBefore:CGPoint!
@@ -56,8 +53,7 @@ class StageViewController: UIViewController {
         
         //配列の保存
         for i in 0 ..< humans.count {
-            
-        
+            //realmに用意したbaforeMoveXの配列（list)にbefores[何番目か]のx座標をDoubleに変換して入れる。
             save.beforeMoveX.append(Double(befores[i].x))
             save.beforeMoveY.append(Double(befores[i].y))
             save.afterMoveX.append(Double(afters[i].x))
@@ -183,7 +179,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 31, height: 33))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 45, height: 50))
         
         newImageView.image = UIImage(named: "tree1.png")
         
@@ -206,7 +202,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 31, height: 26))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 45, height: 38))
         
         newImageView.image = UIImage(named: "block.png")
         

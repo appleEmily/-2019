@@ -14,12 +14,11 @@ class TableViewController: UITableViewController {
     
     @IBOutlet weak var back: UIBarButtonItem!
     
-    
     let realm = try! Realm()
     
     var text2:String!
-    var giveSaveBefore:CGPoint!
-    var giveSaveAfter:CGPoint!
+    var giveSaveBefore:[CGPoint]!
+    var giveSaveAfter:[CGPoint]!
     
     //dataがとっていた変数を入れる箱
     var data:Results<Save>!
@@ -53,10 +52,10 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         
         var titleNameBox = data[indexPath.row].titleName
-//        let bmoveX = data[indexPath.row].beforeMoveX
-//        let bmoveY = data[indexPath.row].beforeMoveY
-//        let amoveX = data[indexPath.row].afterMoveX
-//        let amoveY = data[indexPath.row].afterMoveY
+        let bmoveX = data[indexPath.row].beforeMoveX
+        let bmoveY = data[indexPath.row].beforeMoveY
+        let amoveX = data[indexPath.row].afterMoveX
+        let amoveY = data[indexPath.row].afterMoveY
         
         cell.saveTitleName.text = titleNameBox
         
@@ -68,10 +67,10 @@ class TableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var titleNameBox = data[indexPath.row].titleName
-//        let bmoveX = data[indexPath.row].beforeMoveX
-//        let bmoveY = data[indexPath.row].beforeMoveY
-//        let amoveX = data[indexPath.row].afterMoveX
-//        let amoveY = data[indexPath.row].afterMoveY
+        let bmoveX = data[indexPath.row].beforeMoveX
+        let bmoveY = data[indexPath.row].beforeMoveY
+        let amoveX = data[indexPath.row].afterMoveX
+        let amoveY = data[indexPath.row].afterMoveY
         
         //_print(bmoveX)
         
@@ -80,7 +79,8 @@ class TableViewController: UITableViewController {
         
         text2 = titleNameBox
         
-        //giveSaveBefore = (CGPoint(x: bmoveX, y: bmoveY))
+        giveSaveBefore = [CGPoint(x: bmoveX, y: bmoveY)]
+        
         
         
         

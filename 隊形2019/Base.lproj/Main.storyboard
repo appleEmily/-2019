@@ -104,7 +104,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0r-cj-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="28"/>
+            <point key="canvasLocation" x="1193" y="28"/>
         </scene>
         <!--隊形名-->
         <scene sceneID="3qk-4Y-p6z">
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Isg-2e-y0t">
-                                <rect key="frame" x="-35" y="40" width="722" height="313"/>
+                                <rect key="frame" x="-36" y="40" width="722" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLJ-NE-DIc">
@@ -137,14 +137,14 @@
                                 </items>
                             </navigationBar>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="20" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
-                                <rect key="frame" x="437" y="324" width="179" height="30"/>
+                                <rect key="frame" x="436" y="327" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="changeSpeed:" destination="EKO-ju-pFp" eventType="valueChanged" id="ZnC-tW-RTi"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-ZM-ApP">
-                                <rect key="frame" x="215" y="336" width="25" height="25"/>
+                                <rect key="frame" x="214" y="336" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="pink.png"/>
                                 <connections>
@@ -152,7 +152,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nK-wy-rUa">
-                                <rect key="frame" x="386" y="319" width="45" height="45"/>
+                                <rect key="frame" x="384" y="324" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="play.png"/>
                                 <connections>
@@ -168,7 +168,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="隊形名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-tk-liz">
-                                <rect key="frame" x="155" y="0.0" width="356" height="32"/>
+                                <rect key="frame" x="154" y="0.0" width="356" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -207,7 +207,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J22-wv-8y3">
-                                <rect key="frame" x="241" y="321" width="30" height="40"/>
+                                <rect key="frame" x="240" y="321" width="30" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Button" image="kyoshu.png"/>
                                 <connections>
@@ -215,7 +215,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-NQ-sQz">
-                                <rect key="frame" x="186" y="336" width="25" height="25"/>
+                                <rect key="frame" x="185" y="336" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="people.png">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -233,7 +233,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lye-iu-5T4">
-                                <rect key="frame" x="279" y="328" width="31" height="33"/>
+                                <rect key="frame" x="279" y="328" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tree1.png"/>
                                 <connections>
@@ -295,7 +295,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JN-vA-fby" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eEb-SB-Yeh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="1028"/>
+            <point key="canvasLocation" x="1192" y="1084"/>
         </scene>
         <!--Title View Controller-->
         <scene sceneID="5J2-qR-Suz">
@@ -362,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7s-Sg-bMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="28"/>
+            <point key="canvasLocation" x="484" y="28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hMw-sg-M4G">
@@ -380,23 +380,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fff-8H-igz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-1388"/>
+            <point key="canvasLocation" x="1191" y="-860"/>
         </scene>
     </scenes>
     <resources>
         <image name="back3.png" width="1558" height="1174"/>
-        <image name="block.png" width="31" height="26"/>
-        <image name="justPeople.png" width="55" height="55"/>
+        <image name="block.png" width="45" height="38"/>
+        <image name="justPeople.png" width="45" height="45"/>
         <image name="kaneko1.png" width="2000" height="1414"/>
         <image name="kyoshu.png" width="30" height="46"/>
         <image name="people.png" width="25" height="25"/>
         <image name="pink.png" width="25" height="25"/>
         <image name="play.png" width="52" height="52"/>
-        <image name="runHuman.png" width="40" height="49"/>
+        <image name="runHuman.png" width="32" height="39"/>
         <image name="trash2.png" width="52" height="52"/>
-        <image name="tree1.png" width="31" height="34"/>
+        <image name="tree1.png" width="45" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="znU-2x-6ru"/>
+        <segue reference="fWU-mR-ztC"/>
     </inferredMetricsTieBreakers>
 </document>

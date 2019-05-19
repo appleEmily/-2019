@@ -18,6 +18,8 @@ class TableViewController: UITableViewController {
     let realm = try! Realm()
     
     var text2:String!
+    var giveSaveBefore:CGPoint!
+    var giveSaveAfter:CGPoint!
     
     //dataがとっていた変数を入れる箱
     var data:Results<Save>!
@@ -51,10 +53,10 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         
         var titleNameBox = data[indexPath.row].titleName
-        let bmoveX = data[indexPath.row].beforeMoveX
-        let bmoveY = data[indexPath.row].beforeMoveY
-        let amoveX = data[indexPath.row].afterMoveX
-        let amoveY = data[indexPath.row].afterMoveY
+//        let bmoveX = data[indexPath.row].beforeMoveX
+//        let bmoveY = data[indexPath.row].beforeMoveY
+//        let amoveX = data[indexPath.row].afterMoveX
+//        let amoveY = data[indexPath.row].afterMoveY
         
         cell.saveTitleName.text = titleNameBox
         
@@ -64,14 +66,28 @@ class TableViewController: UITableViewController {
         
         return cell
     }
-    
-    
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var titleNameBox = data[indexPath.row].titleName
+//        let bmoveX = data[indexPath.row].beforeMoveX
+//        let bmoveY = data[indexPath.row].beforeMoveY
+//        let amoveX = data[indexPath.row].afterMoveX
+//        let amoveY = data[indexPath.row].afterMoveY
         
-        //let dataSaved = 
+        //_print(bmoveX)
         
-        //if editingStyle == UITableViewCell.EditingStyle.delete{
-    }
+        
+        
+        
+        text2 = titleNameBox
+        
+        //giveSaveBefore = (CGPoint(x: bmoveX, y: bmoveY))
+        
+        
+        
+        
+        performSegue(withIdentifier: "reopen", sender: nil)
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,6 +96,7 @@ class TableViewController: UITableViewController {
             let stageViewController = segue.destination as? StageViewController
             
             stageViewController?.text = text2
+            //stageViewController?.SavedBefore =
             
             
         }

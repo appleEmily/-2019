@@ -15,6 +15,9 @@ class StageViewController: UIViewController {
     
     //受け取った名前
     var text: String!
+    var SavedBefore:CGPoint!
+    var saveAfter:CGPoint!
+    
     
     var count: Int = 0
     var currentHuman: UIImageView!
@@ -52,14 +55,13 @@ class StageViewController: UIViewController {
         save.titleName = taikeiName.text!
         
         //配列の保存
-        for i in (0 ..< humans.count) {
+        for i in 0 ..< humans.count {
             
         
             save.beforeMoveX.append(Double(befores[i].x))
             save.beforeMoveY.append(Double(befores[i].y))
             save.afterMoveX.append(Double(afters[i].x))
             save.afterMoveY.append(Double(afters[i].y))
-            
         }
         
         
@@ -112,8 +114,8 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 40, height: 40))
-        
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 25, height: 25))
+       
         newImageView.image = UIImage(named: "people.png")
         
         newImageView.tag = humans.count + 1
@@ -135,7 +137,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 40, height: 40))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 25, height: 25))
         
         newImageView.image = UIImage(named: "pink.png")
         
@@ -158,7 +160,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 40, height: 40))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 30, height: 40))
         
         newImageView.image = UIImage(named: "kyoshu.png")
         
@@ -173,6 +175,53 @@ class StageViewController: UIViewController {
         afters.append(self.view.center)
         view.addSubview(newImageView)
     }
+    
+    
+    @IBAction func tree(_ sender: Any) {
+        for i in (0 ..< humans.count) {
+            humans[i].center = befores[i]
+            
+            humans[i].setNeedsDisplay()
+        }
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 31, height: 33))
+        
+        newImageView.image = UIImage(named: "tree1.png")
+        
+        newImageView.tag = humans.count + 1
+        
+        newImageView.center = self.view.center
+        
+        newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+        
+        humans.append(newImageView)
+        befores.append(self.view.center)
+        afters.append(self.view.center)
+        view.addSubview(newImageView)
+        
+    }
+    
+    @IBAction func block(_ sender: Any) {
+        for i in (0 ..< humans.count) {
+            humans[i].center = befores[i]
+            
+            humans[i].setNeedsDisplay()
+        }
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 31, height: 26))
+        
+        newImageView.image = UIImage(named: "block.png")
+        
+        newImageView.tag = humans.count + 1
+        
+        newImageView.center = self.view.center
+        
+        newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+        
+        humans.append(newImageView)
+        befores.append(self.view.center)
+        afters.append(self.view.center)
+        view.addSubview(newImageView)
+    }
+    
     
     
     @IBAction func animation() {

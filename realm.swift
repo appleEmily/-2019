@@ -16,10 +16,14 @@ class Save: Object {
     //@objc dynamic var afterMove: Double = 0.0
     @objc dynamic var titleName: String = ""
     
+    //配列として保存している
+    
     let beforeMoveX = List<Double>()
     let beforeMoveY = List<Double>()
     let afterMoveX = List<Double>()
     let afterMoveY = List<Double>()
+    
+    
 
     
 

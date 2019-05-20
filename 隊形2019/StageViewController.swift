@@ -12,14 +12,14 @@ class StageViewController: UIViewController {
 
     //受け取った名前
     var text: String!
-    var SavedBefore:CGPoint!
-    var saveAfter:CGPoint!
+    var recievedId: Int!
+    var data:Results<Save>!
+    
     
     
     var count: Int = 0
-    var currentHuman: UIImageView!
+
     var humans = [UIImageView]()
-    var pinks = [UIImageView]()
     var befores = [CGPoint]()
     
     var afters = [CGPoint]()
@@ -30,19 +30,31 @@ class StageViewController: UIViewController {
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
     
-    
     @IBOutlet weak var taikeiName: UILabel!
-    
     //ボタンの名前
     @IBOutlet weak var beforeBtn: UIButton!
     @IBOutlet weak var afterBtn: UIButton!
     
     @IBOutlet weak var deleteBtn: UIButton!
-    
+    //この中に書く
     override func viewDidLoad() {
         super.viewDidLoad()
         
         taikeiName.text = text
+        //データ全部持ってきた。モデルたくさん
+        data = realm.objects(Save.self)
+        //糸つ
+        befores = [CGPoint(x: Results[].beforeMoveX, y: Results[].beforeMoveY)]
+        
+        
+//        for i in 0 ..<  {
+//
+//
+//        }
+        
+        
+        
+        
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -217,6 +229,29 @@ class StageViewController: UIViewController {
         afters.append(self.view.center)
         view.addSubview(newImageView)
     }
+
+    @IBAction func red() {
+        for i in (0 ..< humans.count) {
+            humans[i].center = befores[i]
+            
+            humans[i].setNeedsDisplay()
+        }
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 24, height: 58))
+        
+        newImageView.image = UIImage(named: "redTape.png")
+        
+        newImageView.tag = humans.count + 1
+        
+        newImageView.center = self.view.center
+        
+        newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+        
+        humans.append(newImageView)
+        befores.append(self.view.center)
+        afters.append(self.view.center)
+        view.addSubview(newImageView)
+    }
+    
     
     
     

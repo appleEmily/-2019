@@ -17,10 +17,8 @@ class TableViewController: UITableViewController {
     let realm = try! Realm()
     
     var text2:String!
-    var giveSaveBefore:[CGPoint]!
-    var giveSaveAfter:[CGPoint]!
     
-    //dataがとっていた変数を入れる箱
+    //保存したデータを入れる箱
     var data:Results<Save>!
     
 
@@ -29,10 +27,8 @@ class TableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
+        //用意した箱にあデータを受け取る。ここで初めてデータが入る
         data = realm.objects(Save.self)
-        
-//        tableView.delegate = self
-//        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,6 +61,7 @@ class TableViewController: UITableViewController {
         
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var titleNameBox = data[indexPath.row].titleName
         let bmoveX = data[indexPath.row].beforeMoveX
@@ -73,21 +70,9 @@ class TableViewController: UITableViewController {
         let amoveY = data[indexPath.row].afterMoveY
         
         //_print(bmoveX)
-        
-        
-        
-        
         text2 = titleNameBox
-        
-        giveSaveBefore = [CGPoint(x: bmoveX, y: bmoveY)]
-        
-        
-        
-        
-        
-        performSegue(withIdentifier: "reopen", sender: nil)
-        
-        
+
+        performSegue(withIdentifier: "reopen", sender: indexPath.row)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -95,10 +80,8 @@ class TableViewController: UITableViewController {
             
             let stageViewController = segue.destination as? StageViewController
             
-            stageViewController?.text = text2
-            //stageViewController?.SavedBefore =
-            
-            
+            //stageViewController?.text = text2
+            stageViewController?.recievedId = sender as? Int
         }
     }
     

@@ -58,6 +58,7 @@
 		A1E3865022913FF700836D2F /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E3864F22913FF600836D2F /* people.png */; };
 		A1E386522291400100836D2F /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E3865122913FFF00836D2F /* pink.png */; };
 		A1E386542291400B00836D2F /* kyoshu.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E386532291400A00836D2F /* kyoshu.png */; };
+		A1E3865622926C2200836D2F /* redTape.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E3865522926C2100836D2F /* redTape.png */; };
 		F50E0D593B82A036335A3795 /* Pods___2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656359B1DFA83A8BC0BF1B0D /* Pods___2019UITests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -141,6 +142,7 @@
 		A1E3864F22913FF600836D2F /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		A1E3865122913FFF00836D2F /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink.png; path = "../../../../Desktop/とりあえずeverything/pink.png"; sourceTree = "<group>"; };
 		A1E386532291400A00836D2F /* kyoshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyoshu.png; sourceTree = "<group>"; };
+		A1E3865522926C2100836D2F /* redTape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redTape.png; sourceTree = "<group>"; };
 		A7EBB3299AF755C546A535E1 /* Pods___2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___2019.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019.release.xcconfig"; path = "Target Support Files/Pods-隊形2019/Pods-隊形2019.release.xcconfig"; sourceTree = "<group>"; };
 		F761086B49A8CF53DE78AE50 /* Pods-隊形2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-隊形2019Tests.release.xcconfig"; path = "Target Support Files/Pods-隊形2019Tests/Pods-隊形2019Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				A1E386452291391300836D2F /* back3.png */,
 				A1E3864C22913FE100836D2F /* block.png */,
 				A1E3864B22913FE000836D2F /* tree1.png */,
+				A1E3865522926C2100836D2F /* redTape.png */,
 				A1E3864F22913FF600836D2F /* people.png */,
 				A1E3865122913FFF00836D2F /* pink.png */,
 				A1E386532291400A00836D2F /* kyoshu.png */,
@@ -415,6 +418,7 @@
 				A1E3863A228DA9BB00836D2F /* iTunesArtwork@3x.png in Resources */,
 				A1E386462291391300836D2F /* back3.png in Resources */,
 				A1E3862C228DA9BB00836D2F /* Icon-App-83.5x83.5@2x.png in Resources */,
+				A1E3865622926C2200836D2F /* redTape.png in Resources */,
 				A1AB50922268108E00AA3B6A /* LaunchScreen.storyboard in Resources */,
 				A1E38637228DA9BB00836D2F /* Icon-App-29x29@2x.png in Resources */,
 				A13825E72269CE1D003ABCC5 /* runHuman.png in Resources */,

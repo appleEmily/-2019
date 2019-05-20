@@ -17,7 +17,6 @@ class TableViewController: UITableViewController {
     let realm = try! Realm()
     
     var text2:String!
-    
     //保存したデータを入れる箱
     var data:Results<Save>!
     
@@ -82,6 +81,8 @@ class TableViewController: UITableViewController {
             
             //stageViewController?.text = text2
             stageViewController?.recievedId = sender as? Int
+            
+            stageViewController?.isFromList = true
         }
     }
     

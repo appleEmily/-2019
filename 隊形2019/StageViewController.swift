@@ -16,19 +16,18 @@ class StageViewController: UIViewController {
     var data:Results<Save>!
     
     
-    
     var count: Int = 0
-
     var humans = [UIImageView]()
-    var befores = [CGPoint]()
+    var befores: [CGPoint] = []
     
     var afters = [CGPoint]()
     var speed: Double = 3.0
     var isAfter: Bool = false
-    var deletee: Bool = true
+    var deleteCheck: Bool = true
     var first: Bool = true
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
+    var isFromList = false
     
     @IBOutlet weak var taikeiName: UILabel!
     //ボタンの名前
@@ -40,21 +39,27 @@ class StageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //前のページでtitleを入力した時の話。
         taikeiName.text = text
         //データ全部持ってきた。モデルたくさん
+        
         data = realm.objects(Save.self)
-        //糸つ
-        befores = [CGPoint(x: Results[].beforeMoveX, y: Results[].beforeMoveY)]
         
-        
-//        for i in 0 ..<  {
-//
-//
-//        }
-        
-        
-        
-        
+        //これで出そうだけど出ません。
+        //if文ではBool判定が必要
+        if isFromList {
+        taikeiName.text = data[recievedId].titleName
+
+        for i in 0 ..< data[recievedId].beforeMoveX.count {
+            befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
+                                   y: data[recievedId].beforeMoveY[i])
+            )
+        }
+        for i in 0 ..< data[recievedId].afterMoveX.count {
+            afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i]))
+            }
+        }
+        isFromList = false
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -310,16 +315,6 @@ class StageViewController: UIViewController {
                     } else {
                         afters[touchedView.tag - 1] = touchedView.center
                     }
-                    //                    if deletee {
-                    //                        if !isAfter {
-                    //                            befores.remove(at: touchedView.tag - 1)
-                    //                        } else {
-                    //                            afters.remove(at: touchedView.tag - 1)
-                    //                        }
-                    
-                    //
-                    //                        humans.remove(at: touchedView.tag - 1)
-                    //                    }
                 }
             }
         }
@@ -327,31 +322,37 @@ class StageViewController: UIViewController {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        //ここに書いたら毎回なっちゃうよ。ゴミ箱の上に来たらって書かなきゃいけない
+        //deleteCheck = true
+        
         //gapXとgapYの初期化
         gapX = 0.0
         gapY = 0.0
         if let touch = touches.first {
             // タッチしたビューをviewプロパティで取得する
-            if let touchedView = touch.view {
-                if touchedView.tag >= 1 {
-                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+//            if let touchedView = touch.view {
+//                if touchedView.tag >= 1 {
+//                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
+//                    
+//                    if deleteCheck {
+//                        if !isAfter {
+//                            
+//                            befores.remove(at: touchedView.tag - 1)
+//                            
+//                        } else {
+//                            
+//                            afters.remove(at: touchedView.tag - 1)
+//                        }
+//                        humans.remove(at: touchedView.tag - 1)
+//                        humans[touchedView.tag - 1].removeFromSuperview()
+                        
+                        //humans[touchedView.tag - 1] = nil
                     
-                    //                        if deletee {
-                    //
-                    //                            if !isAfter {
-                    //                                befores.remove(at: touchedView.tag - 1)
-                    //                            } else {
-                    //                                afters.remove(at: touchedView.tag - 1)
-                    //                            }
-                    //                            humans.remove(at: touchedView.tag - 1)
-                    //                            humans[touchedView.tag - 1].removeFromSuperview()
-                    //                            //humans[touchedView.tag - 1] = nil
-                    //
-                    //                        }
+                                            //}
                     
                     
-                }
-            }
+//                }
+//            }
         }
     }
     
@@ -367,7 +368,7 @@ class StageViewController: UIViewController {
     }
     
     @IBAction func delete() {
-        deletee = true
+        
     }
     
     

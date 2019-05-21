@@ -8,13 +8,10 @@ class StageViewController: UIViewController {
     
     let realm = try! Realm()
     var save = Save()
-    
-
     //受け取った名前
     var text: String!
     var recievedId: Int!
     var data:Results<Save>!
-    
     
     var count: Int = 0
     var humans = [UIImageView]()
@@ -28,6 +25,9 @@ class StageViewController: UIViewController {
     var gapX:CGFloat = 0.0
     var gapY:CGFloat = 0.0
     var isFromList = false
+    
+    var afterSaveBefore = false
+    var afterSaveAfter = false
     
     @IBOutlet weak var taikeiName: UILabel!
     //ボタンの名前
@@ -46,6 +46,7 @@ class StageViewController: UIViewController {
         //これで出そうだけど出ません。
         if isFromList {
         taikeiName.text = data[recievedId].titleName
+            
 
         for i in 0 ..< data[recievedId].beforeMoveX.count {
             befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
@@ -56,6 +57,7 @@ class StageViewController: UIViewController {
                 
                 humans[i].setNeedsDisplay()
             }
+            //if afterSaveBefore {
             
             let newImageView = UIImageView(frame: CGRect(x: data[recievedId].beforeMoveX[i], y: data[recievedId].beforeMoveY[i], width: 25, height: 25))
             
@@ -71,7 +73,9 @@ class StageViewController: UIViewController {
             befores.append(self.view.center)
             afters.append(self.view.center)
             view.addSubview(newImageView)
+           // }
         }
+            
      
         for i in 0 ..< data[recievedId].afterMoveX.count {
             afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i]))
@@ -80,21 +84,19 @@ class StageViewController: UIViewController {
                 
                 humans[i].setNeedsDisplay()
             }
-            
+            //if afterSaveAfter {
             let newImageView = UIImageView(frame: CGRect(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i], width: 25, height: 25))
-            
             newImageView.image = UIImage(named: "people.png")
-            
             newImageView.tag = humans.count + 1
-            
             newImageView.center = self.view.center
-            
             newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
             
             humans.append(newImageView)
             befores.append(self.view.center)
             afters.append(self.view.center)
             view.addSubview(newImageView)
+                
+            //}
             
             }
             isFromList = false
@@ -124,6 +126,7 @@ class StageViewController: UIViewController {
     
     @IBAction func before() {
         isAfter = false
+        afterSaveBefore = true
         beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.red, for: .normal)
         for i in (0 ..< humans.count) {
@@ -133,6 +136,7 @@ class StageViewController: UIViewController {
     }
     @IBAction func past() {
         isAfter = true
+        afterSaveAfter = true
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
         afterBtn.setTitleColor(UIColor.black, for: .normal)
         for i in (0 ..< humans.count) {
@@ -392,11 +396,8 @@ class StageViewController: UIViewController {
         speed = Double(sender.value)
     }
     
-    @IBAction func delete() {
-        
-    }
-    
-    
-    
-    
+//    @IBAction func delete() {
+//
+//    }
+ 
 }

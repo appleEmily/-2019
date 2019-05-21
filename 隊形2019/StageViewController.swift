@@ -20,7 +20,7 @@ class StageViewController: UIViewController {
     var humans = [UIImageView]()
     var befores: [CGPoint] = []
     
-    var afters = [CGPoint]()
+    var afters:[CGPoint] = []
     var speed: Double = 3.0
     var isAfter: Bool = false
     var deleteCheck: Bool = true
@@ -42,11 +42,8 @@ class StageViewController: UIViewController {
         //前のページでtitleを入力した時の話。
         taikeiName.text = text
         //データ全部持ってきた。モデルたくさん
-        
         data = realm.objects(Save.self)
-        
         //これで出そうだけど出ません。
-        //if文ではBool判定が必要
         if isFromList {
         taikeiName.text = data[recievedId].titleName
 
@@ -54,12 +51,54 @@ class StageViewController: UIViewController {
             befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
                                    y: data[recievedId].beforeMoveY[i])
             )
+            for i in 0 ..< humans.count {
+                humans[i].center = befores[i]
+                
+                humans[i].setNeedsDisplay()
+            }
+            
+            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].beforeMoveX[i], y: data[recievedId].beforeMoveY[i], width: 25, height: 25))
+            
+            newImageView.image = UIImage(named: "people.png")
+            
+            newImageView.tag = humans.count + 1
+            
+            newImageView.center = self.view.center
+            
+            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+            
+            humans.append(newImageView)
+            befores.append(self.view.center)
+            afters.append(self.view.center)
+            view.addSubview(newImageView)
         }
+     
         for i in 0 ..< data[recievedId].afterMoveX.count {
             afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i]))
+            for i in 0 ..< humans.count {
+                humans[i].center = afters[i]
+                
+                humans[i].setNeedsDisplay()
             }
+            
+            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i], width: 25, height: 25))
+            
+            newImageView.image = UIImage(named: "people.png")
+            
+            newImageView.tag = humans.count + 1
+            
+            newImageView.center = self.view.center
+            
+            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+            
+            humans.append(newImageView)
+            befores.append(self.view.center)
+            afters.append(self.view.center)
+            view.addSubview(newImageView)
+            
+            }
+            isFromList = false
         }
-        isFromList = false
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -81,25 +120,17 @@ class StageViewController: UIViewController {
         try! realm.write {
             realm.add(save)
         }
-        
-        
             }
     
     @IBAction func before() {
         isAfter = false
-        
         beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.red, for: .normal)
-        
         for i in (0 ..< humans.count) {
             humans[i].center = befores[i]
-            
             humans[i].setNeedsDisplay()
-            
         }
-        
     }
-    
     @IBAction func past() {
         isAfter = true
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
@@ -110,17 +141,11 @@ class StageViewController: UIViewController {
             } else {
                 humans[i].center = afters[i]
             }
-            
-            
             humans[i].setNeedsDisplay()
         }
         first = false
-        
-        
+    
     }
-    
-    
-    
     @IBAction func addHuman(){
         for i in (0 ..< humans.count) {
             humans[i].center = befores[i]

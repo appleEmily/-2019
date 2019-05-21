@@ -29,23 +29,24 @@ class StageViewController: UIViewController {
     var afterSaveBefore = false
     var afterSaveAfter = false
     
-    @IBOutlet weak var taikeiName: UILabel!
+    //@IBOutlet weak var taikeiName: UILabel!
     //ボタンの名前
     @IBOutlet weak var beforeBtn: UIButton!
     @IBOutlet weak var afterBtn: UIButton!
     
-    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var taikeiName: UINavigationItem!
+    
     //この中に書く
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //前のページでtitleを入力した時の話。
-        taikeiName.text = text
+        taikeiName.title = text
         //データ全部持ってきた。モデルたくさん
         data = realm.objects(Save.self)
         //これで出そうだけど出ません。
         if isFromList {
-        taikeiName.text = data[recievedId].titleName
+        taikeiName.title = data[recievedId].titleName
             
 
         for i in 0 ..< data[recievedId].beforeMoveX.count {
@@ -107,7 +108,7 @@ class StageViewController: UIViewController {
         
         save.titleName   = String(text)
         
-        save.titleName = taikeiName.text!
+        save.titleName = taikeiName.title!
         
         //配列の保存
         for i in 0 ..< humans.count {

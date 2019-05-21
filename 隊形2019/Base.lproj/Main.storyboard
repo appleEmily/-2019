@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqo-J9-1RC">
-                                <rect key="frame" x="400" y="251" width="185" height="47"/>
+                                <rect key="frame" x="399" y="251" width="186" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -99,7 +99,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="back" destination="Zrq-Is-HaB" id="GTK-WZ-Oba"/>
-                        <segue destination="EKO-ju-pFp" kind="show" identifier="reopen" id="fWU-mR-ztC"/>
+                        <segue destination="EKO-ju-pFp" kind="presentation" identifier="reopen" id="fWU-mR-ztC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0r-cj-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Isg-2e-y0t">
-                                <rect key="frame" x="-36" y="40" width="722" height="313"/>
+                                <rect key="frame" x="-36" y="40" width="721" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56r-3k-Cjh">
@@ -135,22 +135,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem id="xYb-WM-EQg">
+                                    <navigationItem title="隊形名" id="xYb-WM-EQg">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; 保存して終了" id="XNC-BH-LEq">
                                             <connections>
                                                 <action selector="goTop:" destination="EKO-ju-pFp" id="l0c-qP-1vd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="設定" id="lRs-6H-Uz0">
-                                            <connections>
-                                                <segue destination="wQg-lg-PSK" kind="presentation" id="KLq-2I-oDf"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="20" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
-                                <rect key="frame" x="483" y="327" width="180" height="30"/>
+                                <rect key="frame" x="482" y="327" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -171,7 +166,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nK-wy-rUa">
-                                <rect key="frame" x="418" y="324" width="39" height="40"/>
+                                <rect key="frame" x="417" y="324" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46141909250000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="play.png"/>
@@ -184,13 +179,6 @@
                                     <action selector="animation" destination="EKO-ju-pFp" eventType="touchUpInside" id="Rp7-Gp-V1p"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="隊形名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-tk-liz">
-                                <rect key="frame" x="154" y="0.0" width="356" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhO-Pv-Avh">
                                 <rect key="frame" x="106" y="320" width="64" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -232,7 +220,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-NQ-sQz">
-                                <rect key="frame" x="203" y="336" width="25" height="25"/>
+                                <rect key="frame" x="202" y="336" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" image="people.png">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -263,7 +251,6 @@
                                 <state key="normal" image="redTape.png"/>
                                 <connections>
                                     <action selector="red" destination="EKO-ju-pFp" eventType="touchUpInside" id="YJF-xF-fay"/>
-                                    <action selector="red:" destination="EKO-ju-pFp" eventType="touchUpInside" id="Sw8-vU-tZb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -278,49 +265,13 @@
                     <connections>
                         <outlet property="afterBtn" destination="EhO-Pv-Avh" id="krJ-2A-mxR"/>
                         <outlet property="beforeBtn" destination="xKF-Na-Icf" id="ch5-zr-IgM"/>
-                        <outlet property="taikeiName" destination="Ggb-tk-liz" id="KKa-V2-Jjj"/>
+                        <outlet property="taikeiName" destination="xYb-WM-EQg" id="3zb-Eh-3Ib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZh-R0-NGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Vm6-Mn-aGc"/>
             </objects>
             <point key="canvasLocation" x="483.50824587706148" y="1084"/>
-        </scene>
-        <!--Settei View Controller-->
-        <scene sceneID="Hcm-fs-C2h">
-            <objects>
-                <viewController id="wQg-lg-PSK" customClass="setteiViewController" customModule="隊形2019" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3dF-YS-Ldg">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr2-Kp-7ss">
-                                <rect key="frame" x="20" y="9" width="68" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94571560210000005" green="0.99942404029999998" blue="0.49802038910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="done" destination="wQg-lg-PSK" eventType="touchUpInside" id="33i-rb-Xg3"/>
-                                    <action selector="done" destination="eEb-SB-Yeh" eventType="touchUpInside" id="kYu-MR-RJd"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="NLD-Po-kGE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0JN-vA-fby" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="eEb-SB-Yeh" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1192" y="1084"/>
         </scene>
         <!--Title View Controller-->
         <scene sceneID="5J2-qR-Suz">
@@ -331,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="隊形の名前を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-dG-aUF">
-                                <rect key="frame" x="148" y="110" width="360" height="51"/>
+                                <rect key="frame" x="147" y="110" width="360" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>

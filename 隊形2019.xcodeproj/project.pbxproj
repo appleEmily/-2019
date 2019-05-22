@@ -765,6 +765,7 @@
 			baseConfigurationReference = 411AABD9A42E9CDC5129B25D /* Pods-隊形2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019/Info.plist";
@@ -772,8 +773,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Emily.--2019";
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.taikeiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -784,6 +786,7 @@
 			baseConfigurationReference = D610851ADCCEBCF9992C1FAA /* Pods-隊形2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743J7J89D4;
 				INFOPLIST_FILE = "隊形2019/Info.plist";
@@ -791,8 +794,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Emily.--2019";
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.taikeiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

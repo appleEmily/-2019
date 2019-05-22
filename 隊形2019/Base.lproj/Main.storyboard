@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqo-J9-1RC">
-                                <rect key="frame" x="399" y="251" width="186" height="47"/>
+                                <rect key="frame" x="400" y="251" width="185" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -119,8 +119,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56r-3k-Cjh">
-                                <rect key="frame" x="197" y="319" width="205" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="196" y="319" width="205" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46141909246575341" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -136,15 +136,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="隊形名" id="xYb-WM-EQg">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; 保存して終了" id="XNC-BH-LEq">
-                                            <connections>
-                                                <action selector="goTop:" destination="EKO-ju-pFp" id="l0c-qP-1vd"/>
-                                            </connections>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="i2X-4S-cqb">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WEJ-rK-gTN">
+                                                <rect key="frame" x="20" y="1" width="108" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="＜保存して終了">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goTop:" destination="EKO-ju-pFp" eventType="touchUpInside" id="a62-Xb-geQ"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="20" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="3" maxValue="10" minimumValueImage="runHuman.png" maximumValueImage="justPeople.png" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-Sx-Rec">
                                 <rect key="frame" x="482" y="327" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.8862745098" blue="0.99607843139999996" alpha="0.46000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,7 +227,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J22-wv-8y3">
                                 <rect key="frame" x="258" y="321" width="30" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <state key="normal" title="Button" image="kyoshu.png"/>
+                                <state key="normal" title="＜保存して終了" image="kyoshu.png"/>
                                 <connections>
                                     <action selector="kyoshu" destination="EKO-ju-pFp" eventType="touchUpInside" id="7K8-Uo-sks"/>
                                 </connections>
@@ -231,15 +244,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-3h-uJC">
                                 <rect key="frame" x="333" y="335" width="31" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="block.png"/>
                                 <connections>
                                     <action selector="block:" destination="EKO-ju-pFp" eventType="touchUpInside" id="rjh-Vf-ZGx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lye-iu-5T4">
-                                <rect key="frame" x="292" y="328" width="35" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="291" y="328" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tree1.png"/>
                                 <connections>
                                     <action selector="tree:" destination="EKO-ju-pFp" eventType="touchUpInside" id="uKP-a9-pXW"/>
@@ -247,7 +260,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IZ-mn-JOL">
                                 <rect key="frame" x="375" y="327" width="24" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="redTape.png"/>
                                 <connections>
                                     <action selector="red" destination="EKO-ju-pFp" eventType="touchUpInside" id="YJF-xF-fay"/>
@@ -282,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="隊形の名前を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-dG-aUF">
-                                <rect key="frame" x="147" y="110" width="360" height="51"/>
+                                <rect key="frame" x="148" y="110" width="360" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>

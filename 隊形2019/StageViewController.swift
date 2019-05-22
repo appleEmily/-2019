@@ -44,65 +44,92 @@ class StageViewController: UIViewController {
         taikeiName.title = text
         //データ全部持ってきた。モデルたくさん
         data = realm.objects(Save.self)
-        //これで出そうだけど出ません。
+        
         if isFromList {
         taikeiName.title = data[recievedId].titleName
             
-
-        for i in 0 ..< data[recievedId].beforeMoveX.count {
-            befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
-                                   y: data[recievedId].beforeMoveY[i])
-            )
-            for i in 0 ..< humans.count {
-                humans[i].center = befores[i]
-                
-                humans[i].setNeedsDisplay()
-            }
-            //if afterSaveBefore {
+            befores.removeAll()
+            afters.removeAll()
             
-            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].beforeMoveX[i], y: data[recievedId].beforeMoveY[i], width: 25, height: 25))
-            
-            newImageView.image = UIImage(named: "people.png")
-            
-            newImageView.tag = humans.count + 1
-            
-            newImageView.center = self.view.center
-            
-            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
-            
-            humans.append(newImageView)
-            befores.append(self.view.center)
-            afters.append(self.view.center)
-            view.addSubview(newImageView)
-           // }
-        }
-            
-     
-        for i in 0 ..< data[recievedId].afterMoveX.count {
-            afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i]))
-            for i in 0 ..< humans.count {
-                humans[i].center = afters[i]
-                
-                humans[i].setNeedsDisplay()
-            }
-            //if afterSaveAfter {
-            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i], width: 25, height: 25))
-            newImageView.image = UIImage(named: "people.png")
-            newImageView.tag = humans.count + 1
-            newImageView.center = self.view.center
-            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
-            
-            humans.append(newImageView)
-            befores.append(self.view.center)
-            afters.append(self.view.center)
-            view.addSubview(newImageView)
-                
-            //}
-            
+            for i in 0 ..< data[recievedId].beforeMoveX.count {
+                befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
+                                       y: data[recievedId].beforeMoveY[i]))
+                afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y:data[recievedId].afterMoveY[i]))
+                print(befores)
+                print(afters)
+                if !isAfter {
+                for i in (0 ..< humans.count) {
+                    humans[i].center = befores[i]
+                    humans[i].setNeedsDisplay()
+                    let newImageView = UIImageView(frame: CGRect(x: data[recievedId].beforeMoveX[i], y: data[recievedId].beforeMoveY[i], width: 25, height: 25))
+                    newImageView.image = UIImage(named: "people.png")
+                    newImageView.tag = humans.count + 1
+                    newImageView.isUserInteractionEnabled = true
+                    view.addSubview(newImageView)
+                    }
+                }
+                if isAfter {
+                    humans[i].center = afters[i]
+                    
+                    humans[i].setNeedsDisplay()
+                    let newImageView = UIImageView(frame: CGRect(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i], width: 25, height: 25))
+                    newImageView.image = UIImage(named: "people.png")
+                    newImageView.tag = humans.count + 1
+                    newImageView.isUserInteractionEnabled = true
+                    //humans[i].center = befores[i]
+                    view.addSubview(newImageView)
+                }
             }
             isFromList = false
         }
     }
+            //ここからを大幅変更
+            
+//        for i in 0 ..< data[recievedId].beforeMoveX.count {
+//            befores.append(CGPoint(x: data[recievedId].beforeMoveX[i],
+//                                   y: data[recievedId].beforeMoveY[i])
+//            )
+//            print(befores)
+//            for i in 0 ..< humans.count {
+//                humans[i].center = befores[i]
+//
+//                humans[i].setNeedsDisplay()
+//            }
+//            //if afterSaveBefore {
+//
+//            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].beforeMoveX[i], y: data[recievedId].beforeMoveY[i], width: 25, height: 25))
+//            newImageView.image = UIImage(named: "people.png")
+//            newImageView.tag = humans.count + 1
+//            //newImageView.center = self.view.center
+//            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+//            //humans.append(newImageView)
+//            //befores.append(self.view.)
+//            //afters.append(self.view.center)
+//            view.addSubview(newImageView)
+//           // }
+//        }
+            
+     
+//        for i in 0 ..< data[recievedId].afterMoveX.count {
+//            afters.append(CGPoint(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i]))
+//            print(afters)
+//            for i in 0 ..< humans.count {
+//                humans[i].center = afters[i]
+//                humans[i].setNeedsDisplay()
+//            }
+//            //if afterSaveAfter {
+//            let newImageView = UIImageView(frame: CGRect(x: data[recievedId].afterMoveX[i], y: data[recievedId].afterMoveY[i], width: 25, height: 25))
+//            newImageView.image = UIImage(named: "people.png")
+//            newImageView.tag = humans.count + 1
+//            //newImageView.center = self.view.center
+//            newImageView.isUserInteractionEnabled = true //大切な文章だったっぽい
+//            //humans.append(newImageView)
+//            //befores.append(self.view.center)
+//            //afters.append(self.view.center)
+//            view.addSubview(newImageView)
+//            //}
+//            }
+
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         
@@ -127,7 +154,7 @@ class StageViewController: UIViewController {
     
     @IBAction func before() {
         isAfter = false
-        afterSaveBefore = true
+        //afterSaveBefore = true
         beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.red, for: .normal)
         for i in (0 ..< humans.count) {
@@ -137,7 +164,7 @@ class StageViewController: UIViewController {
     }
     @IBAction func past() {
         isAfter = true
-        afterSaveAfter = true
+        //afterSaveAfter = true
         beforeBtn.setTitleColor(UIColor.red, for: .normal)
         afterBtn.setTitleColor(UIColor.black, for: .normal)
         for i in (0 ..< humans.count) {
@@ -249,7 +276,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 45, height: 38))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 38, height: 30))
         
         newImageView.image = UIImage(named: "block.png")
         
@@ -271,7 +298,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 24, height: 58))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 20, height: 45))
         
         newImageView.image = UIImage(named: "redTape.png")
         

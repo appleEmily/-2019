@@ -15,12 +15,18 @@ class Save: Object {
     //@objc dynamic var beforeMove: Double = 0.0
     //@objc dynamic var afterMove: Double = 0.0
     @objc dynamic var titleName: String = ""
+    @objc dynamic var id = 0
+    
+    
     
     //配列として保存している
     
-    let beforeMoveX = List<Double>()
-    let beforeMoveY = List<Double>()
-    let afterMoveX = List<Double>()
-    let afterMoveY = List<Double>()
+    var beforeMoveX = List<Double>()
+    var beforeMoveY = List<Double>()
+    var afterMoveX = List<Double>()
+    var afterMoveY = List<Double>()
     
+    override static func primaryKey() -> String {
+        return "id"
+    }
 }

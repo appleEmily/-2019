@@ -29,12 +29,15 @@ class StageViewController: UIViewController {
     var afterSaveBefore = false
     var afterSaveAfter = false
     
+    
     //@IBOutlet weak var taikeiName: UILabel!
     //ボタンの名前
     @IBOutlet weak var beforeBtn: UIButton!
     @IBOutlet weak var afterBtn: UIButton!
     
     @IBOutlet weak var taikeiName: UINavigationItem!
+    
+    var isFirst = true
     
     //この中に書く
     override func viewDidLoad() {
@@ -45,8 +48,8 @@ class StageViewController: UIViewController {
         //データ全部持ってきた。モデルたくさん
         data = realm.objects(Save.self)
         
-        if isFromList {
-        taikeiName.title = data[recievedId].titleName
+        if isFromList && isFirst {
+            taikeiName.title = data[recievedId].titleName
             
             befores.removeAll()
             afters.removeAll()
@@ -67,31 +70,48 @@ class StageViewController: UIViewController {
                 newImageView.tag = humans.count + 1
                 newImageView.isUserInteractionEnabled = true
                 view.addSubview(newImageView)
-
-
-            isFromList = false
+            }
+            isFirst = false
         }
-    }
     }
     @IBAction func goTop(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         
-        save.titleName   = String(text)
-        
-        save.titleName = taikeiName.title!
-        
-        //配列の保存
-        for i in 0 ..< humans.count {
-            //realmに用意したbaforeMoveXの配列（list)にbefores[何番目か]のx座標をDoubleに変換して入れる。
-            save.beforeMoveX.append(Double(befores[i].x))
-            save.beforeMoveY.append(Double(befores[i].y))
-            save.afterMoveX.append(Double(afters[i].x))
-            save.afterMoveY.append(Double(afters[i].y))
-        }
-        try! realm.write {
-            realm.add(save)
-        }
+        if !isFromList {
+            save.id   = data.count
+            save.titleName   = String(text)
+            
+            save.titleName = taikeiName.title!
+            
+            //配列の保存
+            for i in 0 ..< humans.count {
+                //realmに用意したbaforeMoveXの配列（list)にbefores[何番目か]のx座標をDoubleに変換して入れる。
+                save.beforeMoveX.append(Double(befores[i].x))
+                save.beforeMoveY.append(Double(befores[i].y))
+                save.afterMoveX.append(Double(afters[i].x))
+                save.afterMoveY.append(Double(afters[i].y))
             }
+            //}
+            try! realm.write {
+                realm.add(save)
+            }
+        } else {
+            try! realm.write {
+                data[recievedId].beforeMoveX = List<Double>()
+                data[recievedId].beforeMoveY = List<Double>()
+                data[recievedId].afterMoveX = List<Double>()
+                data[recievedId].afterMoveY = List<Double>()
+                
+                for i in 0..<befores.count {
+                    data[recievedId].beforeMoveX.append(Double(befores[i].x))
+                    data[recievedId].beforeMoveY.append(Double(befores[i].y))
+                    data[recievedId].afterMoveX.append(Double(afters[i].x))
+                    data[recievedId].afterMoveY.append(Double(afters[i].y))
+                }
+                realm.add(data, update: true)
+            }
+        }
+    }
     @IBAction func before() {
         isAfter = false
         //afterSaveBefore = true
@@ -108,15 +128,21 @@ class StageViewController: UIViewController {
         beforeBtn.setTitleColor(UIColor.black, for: .normal)
         afterBtn.setTitleColor(UIColor.white, for: .normal)
         for i in (0 ..< humans.count) {
-            if first {
+            if first && !isFromList {
                 humans[i].center = befores[i]
-            } else {
+            }
+            if !first && !isFromList {
+                humans[i].center = afters[i]
+            }
+            if first && isFromList {
+                humans[i].center = afters[i]
+            }
+            if !first && isFromList {
                 humans[i].center = afters[i]
             }
             humans[i].setNeedsDisplay()
         }
         first = false
-    
     }
     @IBAction func addHuman(){
         for i in (0 ..< humans.count) {
@@ -125,7 +151,7 @@ class StageViewController: UIViewController {
             humans[i].setNeedsDisplay()
         }
         let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 25, height: 25))
-       
+        
         newImageView.image = UIImage(named: "people.png")
         
         newImageView.tag = humans.count + 1
@@ -231,7 +257,7 @@ class StageViewController: UIViewController {
         afters.append(self.view.center)
         view.addSubview(newImageView)
     }
-
+    
     @IBAction func red() {
         for i in (0 ..< humans.count) {
             humans[i].center = befores[i]
@@ -326,28 +352,32 @@ class StageViewController: UIViewController {
         gapX = 0.0
         gapY = 0.0
         if let touch = touches.first {
+            
+            if !isFromList{
+                
+            }
             // タッチしたビューをviewプロパティで取得する
 //            if let touchedView = touch.view {
 //                if touchedView.tag >= 1 {
 //                    touchedView.center = CGPoint(x: touch.location(in: view).x - gapX, y: touch.location(in: view).y - gapY)
-//                    
+//
 //                    if deleteCheck {
 //                        if !isAfter {
-//                            
+//
 //                            befores.remove(at: touchedView.tag - 1)
-//                            
+//
 //                        } else {
-//                            
+//
 //                            afters.remove(at: touchedView.tag - 1)
 //                        }
 //                        humans.remove(at: touchedView.tag - 1)
 //                        humans[touchedView.tag - 1].removeFromSuperview()
-                        
+            
                         //humans[touchedView.tag - 1] = nil
-                    
+            
                                             //}
-                    
-                    
+            
+            
 //                }
 //            }
         }
@@ -364,8 +394,8 @@ class StageViewController: UIViewController {
         speed = Double(sender.value)
     }
     
-//    @IBAction func delete() {
-//
-//    }
- 
+    //    @IBAction func delete() {
+    //
+    //    }
+    
 }

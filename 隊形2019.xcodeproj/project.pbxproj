@@ -28,6 +28,7 @@
 		A1AB50BC2269721900AA3B6A /* settei.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BB2269721800AA3B6A /* settei.png */; };
 		A1AB50BE2269B54900AA3B6A /* humanSPE.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50BD2269B54900AA3B6A /* humanSPE.png */; };
 		A1AB50C22269B6ED00AA3B6A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AB50C12269B6ED00AA3B6A /* play.png */; };
+		A1D204412295B7C100495994 /* back4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D204402295B7BB00495994 /* back4.png */; };
 		A1E3860422897D0200836D2F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3860222897D0200836D2F /* TableViewCell.swift */; };
 		A1E3860522897D0200836D2F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E3860322897D0200836D2F /* TableViewCell.xib */; };
 		A1E38609228C6BBD00836D2F /* kaneko1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E38608228C6BBC00836D2F /* kaneko1.png */; };
@@ -114,6 +115,7 @@
 		A1AB50BB2269721800AA3B6A /* settei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settei.png; sourceTree = "<group>"; };
 		A1AB50BD2269B54900AA3B6A /* humanSPE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanSPE.png; sourceTree = "<group>"; };
 		A1AB50C12269B6ED00AA3B6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A1D204402295B7BB00495994 /* back4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back4.png; sourceTree = "<group>"; };
 		A1E3860222897D0200836D2F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A1E3860322897D0200836D2F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A1E38608228C6BBC00836D2F /* kaneko1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaneko1.png; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				A1E38608228C6BBC00836D2F /* kaneko1.png */,
 				A1E38643228F221500836D2F /* back2.png */,
 				A1E386452291391300836D2F /* back3.png */,
+				A1D204402295B7BB00495994 /* back4.png */,
 				A1E3864C22913FE100836D2F /* block.png */,
 				A1E3864B22913FE000836D2F /* tree1.png */,
 				A1E3865522926C2100836D2F /* redTape.png */,
@@ -433,6 +436,7 @@
 				A13825E72269CE1D003ABCC5 /* runHuman.png in Resources */,
 				A1AB50C22269B6ED00AA3B6A /* play.png in Resources */,
 				A13825E12269BAB8003ABCC5 /* 4-pink.png in Resources */,
+				A1D204412295B7C100495994 /* back4.png in Resources */,
 				A1E3864E22913FE200836D2F /* block.png in Resources */,
 				A1E38638228DA9BB00836D2F /* iTunesArtwork@1x.png in Resources */,
 				A1E3867622939F2B00836D2F /* appicon-Small.png in Resources */,

@@ -29,4 +29,10 @@ class Save: Object {
     override static func primaryKey() -> String {
         return "id"
     }
+//    static func lastId() -> Int {
+//        if let save = realm.objects(save.self).last
+//        return data.id + 1
+//    } else {
+//    return 0
+//    }
 }

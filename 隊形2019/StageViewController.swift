@@ -78,7 +78,13 @@ class StageViewController: UIViewController {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         
         if !isFromList {
-            save.id   = data.count
+            if let last = realm.objects(Save.self).sorted(byKeyPath: "id" ,ascending: true).last {
+                save.id = last.id + 1
+            } else {
+              save.id   = 0
+            }
+            print(realm.objects(Save.self))
+            print(save.id)
             save.titleName   = String(text)
             
             save.titleName = taikeiName.title!

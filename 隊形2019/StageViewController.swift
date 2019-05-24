@@ -156,7 +156,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 25, height: 25))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 28, height: 28))
         
         newImageView.image = UIImage(named: "people.png")
         
@@ -179,7 +179,7 @@ class StageViewController: UIViewController {
             
             humans[i].setNeedsDisplay()
         }
-        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 25, height: 25))
+        let newImageView = UIImageView(frame: CGRect(x: -80, y: -80, width: 28, height: 28))
         
         newImageView.image = UIImage(named: "pink.png")
         

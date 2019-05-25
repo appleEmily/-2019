@@ -359,6 +359,7 @@ class StageViewController: UIViewController {
         gapY = 0.0
         if let touch = touches.first {
             
+            
             if !isFromList{
                 
             }

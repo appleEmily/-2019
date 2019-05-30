@@ -1,14 +1,14 @@
 //
-//  HW2UITests.swift
-//  HW2UITests
+//  HW3UITests.swift
+//  HW3UITests
 //
-//  Created by 野崎絵未里 on 2019/05/29.
+//  Created by 野崎絵未里 on 2019/05/30.
 //  Copyright © 2019年 野崎絵未里. All rights reserved.
 //
 
 import XCTest
 
-class HW2UITests: XCTestCase {
+class HW3UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
